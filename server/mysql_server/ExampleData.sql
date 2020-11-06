@@ -38,3 +38,38 @@ VALUES (POINT(55.77566185466846, 37.63266921043397), 'Russia', 'Moscow', 'Moscow
 
 INSERT INTO `IcicleSpy3`.`addresses` (`coordinates`, `country`, `region_state`, `city`, `street`, `building`, `index`)
 VALUES (POINT(55.77611442223143, 37.63265848159791), 'Russia', 'Moscow', 'Moscow', 'Prospekt Mira', '20k1', '2');
+
+-- Add devices
+INSERT INTO `IcicleSpy3`.`devices` (`token`, `addresses_id`) VALUES ('DEV1', '3');
+INSERT INTO `IcicleSpy3`.`devices` (`token`, `addresses_id`) VALUES ('DEV2', '4');
+INSERT INTO `IcicleSpy3`.`devices` (`token`, `addresses_id`) VALUES ('DEV3', '5');
+INSERT INTO `IcicleSpy3`.`devices` (`token`, `addresses_id`) VALUES ('DEV4', '1');
+INSERT INTO `IcicleSpy3`.`devices` (`token`, `addresses_id`) VALUES ('DEV5', '2');
+INSERT INTO `IcicleSpy3`.`devices` (`token`, `addresses_id`) VALUES ('DEV6', '9');
+INSERT INTO `IcicleSpy3`.`devices` (`token`, `addresses_id`) VALUES ('DEV7', '8');
+INSERT INTO `IcicleSpy3`.`devices` (`token`, `addresses_id`) VALUES ('DEV8', '7');
+INSERT INTO `IcicleSpy3`.`devices` (`token`, `addresses_id`) VALUES ('DEV9', '6');
+INSERT INTO `IcicleSpy3`.`devices` (`token`, `addresses_id`) VALUES ('DEV10', '12');
+INSERT INTO `IcicleSpy3`.`devices` (`token`, `addresses_id`) VALUES ('DEV11', '10');
+INSERT INTO `IcicleSpy3`.`devices` (`token`, `addresses_id`) VALUES ('DEV12', '11');
+
+-- Add cameras
+INSERT INTO `IcicleSpy3`.`cameras` (`token`, `addresses_id`, `devices_id`) VALUES ('CAM1', '1', '1');
+-- INSERT INTO `IcicleSpy3`.`cameras` (`token`, `addresses_id`, `devices_id`) VALUES ('CAM2', '1', '1');
+INSERT INTO `IcicleSpy3`.`cameras` (`token`, `addresses_id`, `devices_id`) VALUES ('CAM3', '1', '2');
+INSERT INTO `IcicleSpy3`.`cameras` (`token`, `addresses_id`, `devices_id`) VALUES ('CAM4', '1', '3');
+INSERT INTO `IcicleSpy3`.`cameras` (`token`, `addresses_id`, `devices_id`) VALUES ('CAM5', '2', '3');
+INSERT INTO `IcicleSpy3`.`cameras` (`token`, `addresses_id`, `devices_id`) VALUES ('CAM6', '3', '4');
+INSERT INTO `IcicleSpy3`.`cameras` (`token`, `addresses_id`, `devices_id`) VALUES ('CAM7', '4', '4');
+INSERT INTO `IcicleSpy3`.`cameras` (`token`, `addresses_id`, `devices_id`) VALUES ('CAM8', '5', '5');
+INSERT INTO `IcicleSpy3`.`cameras` (`token`, `addresses_id`, `devices_id`) VALUES ('CAM9', '10', '6');
+INSERT INTO `IcicleSpy3`.`cameras` (`token`, `addresses_id`, `devices_id`) VALUES ('CAM10', '12', '6');
+INSERT INTO `IcicleSpy3`.`cameras` (`token`, `addresses_id`, `devices_id`) VALUES ('CAM11', '10', '7');
+INSERT INTO `IcicleSpy3`.`cameras` (`token`, `addresses_id`, `devices_id`) VALUES ('CAM12', '11', '7');
+INSERT INTO `IcicleSpy3`.`cameras` (`token`, `addresses_id`, `devices_id`) VALUES ('CAM13', '11', '8');
+INSERT INTO `IcicleSpy3`.`cameras` (`token`, `addresses_id`, `devices_id`) VALUES ('CAM14', '9', '10');
+INSERT INTO `IcicleSpy3`.`cameras` (`token`, `addresses_id`, `devices_id`) VALUES ('CAM15', '8', '11');
+INSERT INTO `IcicleSpy3`.`cameras` (`token`, `addresses_id`, `devices_id`) VALUES ('CAM16', '9', '11');
+INSERT INTO `IcicleSpy3`.`cameras` (`token`, `addresses_id`, `devices_id`) VALUES ('CAM17', '6', '12');
+INSERT INTO `IcicleSpy3`.`cameras` (`token`, `addresses_id`, `devices_id`) VALUES ('CAM18', '7', '12');
+
