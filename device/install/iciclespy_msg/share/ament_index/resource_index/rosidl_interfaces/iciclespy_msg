@@ -1,0 +1,6 @@
+msg/ImageMsgRequest.idl
+msg/ImageMsgRequest.msg
+srv/ImageMsgRequest.idl
+srv/ImageMsgRequest.srv
+srv/ImageMsgRequest_Request.msg
+srv/ImageMsgRequest_Response.msg

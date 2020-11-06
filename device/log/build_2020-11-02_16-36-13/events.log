@@ -1,0 +1,276 @@
+[0.000000] (-) TimerEvent: {}
+[0.000132] (iciclespy_msg) JobQueued: {'identifier': 'iciclespy_msg', 'dependencies': OrderedDict()}
+[0.000592] (iciclespy_web_cam) JobQueued: {'identifier': 'iciclespy_web_cam', 'dependencies': OrderedDict()}
+[0.000774] (iciclespy_msg) JobStarted: {'identifier': 'iciclespy_msg'}
+[0.009908] (iciclespy_web_cam) JobStarted: {'identifier': 'iciclespy_web_cam'}
+[0.026779] (iciclespy_msg) JobProgress: {'identifier': 'iciclespy_msg', 'progress': 'cmake'}
+[0.027547] (iciclespy_msg) JobProgress: {'identifier': 'iciclespy_msg', 'progress': 'build'}
+[0.028284] (iciclespy_msg) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg', '--', '-j8', '-l8'], 'cwd': '/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'oleg'), ('LC_TIME', 'ru_RU.UTF-8'), ('TEXTDOMAIN', 'im-config'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '2841'), ('XDG_SESSION_TYPE', 'x11'), ('CUDA_INSTALL_DIR', '/usr/local/cuda/bin'), ('LD_LIBRARY_PATH', '/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib:/home/oleg/Documents/onnx-tensorrt/build:/opt/aravis/build/src'), ('SHLVL', '1'), ('OLDPWD', '/home/oleg/Documents/Github/IcicleSpy3/device/src'), ('QT4_IM_MODULE', 'xim'), ('HOME', '/home/oleg'), ('DESKTOP_SESSION', 'ubuntu'), ('GI_TYPELIB_PATH', '/opt/aravis/build/src'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('FAKE_GENICAM_PATH', '/opt/aravis/src/arv-fake-camera.xml'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '2'), ('ROS_DISTRO', 'eloquent'), ('LOGNAME', 'oleg'), ('GTK_IM_MODULE', 'ibus'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USERNAME', 'oleg'), ('XDG_SESSION_ID', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda/bin:/opt/ros/eloquent/bin:/home/oleg/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/asus-pc:@/tmp/.ICE-unix/2746,unix/asus-pc:/tmp/.ICE-unix/2746'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/604cdd48_60ff_48ec_9bf7_72f49c677cd3'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('GNOME_TERMINAL_SERVICE', ':1.74'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('AMENT_PREFIX_PATH', '/opt/ros/eloquent'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'ru_RU.UTF-8'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('TEXTDOMAINDIR', '/usr/share/locale/'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('GENICAM_GENTL32_PATH', '/opt/Vimba_4_0/VimbaGigETL/CTI/x86_32bit'), ('XDG_VTNR', '2'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg'), ('CUDA_HOME', '/home/oleg/tools/cuda'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('PYTHONPATH', '/opt/ros/eloquent/lib/python3.6/site-packages'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('GENICAM_GENTL64_PATH', '/opt/Vimba_4_0/VimbaGigETL/CTI/x86_64bit'), ('VTE_VERSION', '5202'), ('CUDA_INC_DIR', '/usr/local/cuda/include'), ('CMAKE_PREFIX_PATH', '/opt/ros/eloquent')]), 'shell': False}
+[0.044539] (iciclespy_msg) StdoutLine: {'line': b'-- Found ament_cmake: 0.8.2 (/opt/ros/eloquent/share/ament_cmake/cmake)\n'}
+[0.066146] (iciclespy_msg) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") \n'}
+[0.066291] (iciclespy_msg) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.099240] (-) TimerEvent: {}
+[0.199544] (-) TimerEvent: {}
+[0.255589] (iciclespy_msg) StdoutLine: {'line': b'-- Found sensor_msgs: 0.8.1 (/opt/ros/eloquent/share/sensor_msgs/cmake)\n'}
+[0.261694] (iciclespy_msg) StdoutLine: {'line': b'-- Found rosidl_adapter: 0.8.2 (/opt/ros/eloquent/share/rosidl_adapter/cmake)\n'}
+[0.280626] (iciclespy_web_cam) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/iciclespy_web_cam', 'build', '--build-base', '/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_web_cam/build', 'install', '--prefix', '/home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_web_cam', '--record', '/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_web_cam/install.log', '--single-version-externally-managed'], 'cwd': '/home/oleg/Documents/Github/IcicleSpy3/device/src/iciclespy_web_cam', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'oleg', 'LC_TIME': 'ru_RU.UTF-8', 'TEXTDOMAIN': 'im-config', 'XDG_SEAT': 'seat0', 'SSH_AGENT_PID': '2841', 'XDG_SESSION_TYPE': 'x11', 'CUDA_INSTALL_DIR': '/usr/local/cuda/bin', 'LD_LIBRARY_PATH': '/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib:/home/oleg/Documents/onnx-tensorrt/build:/opt/aravis/build/src', 'SHLVL': '1', 'OLDPWD': '/home/oleg/Documents/Github/IcicleSpy3/device/src', 'QT4_IM_MODULE': 'xim', 'HOME': '/home/oleg', 'DESKTOP_SESSION': 'ubuntu', 'GI_TYPELIB_PATH': '/opt/aravis/build/src', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'ru_RU.UTF-8', 'FAKE_GENICAM_PATH': '/opt/aravis/src/arv-fake-camera.xml', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '2', 'ROS_DISTRO': 'eloquent', 'LOGNAME': 'oleg', 'GTK_IM_MODULE': 'ibus', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'USERNAME': 'oleg', 'XDG_SESSION_ID': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/usr/local/cuda/bin:/opt/ros/eloquent/bin:/home/oleg/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/asus-pc:@/tmp/.ICE-unix/2746,unix/asus-pc:/tmp/.ICE-unix/2746', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/604cdd48_60ff_48ec_9bf7_72f49c677cd3', 'LC_ADDRESS': 'ru_RU.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ru_RU.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XMODIFIERS': '@im=ibus', 'GNOME_TERMINAL_SERVICE': ':1.74', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'AMENT_PREFIX_PATH': '/opt/ros/eloquent', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'LC_NAME': 'ru_RU.UTF-8', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ru_RU.UTF-8', 'TEXTDOMAINDIR': '/usr/share/locale/', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'ru_RU.UTF-8', 'GENICAM_GENTL32_PATH': '/opt/Vimba_4_0/VimbaGigETL/CTI/x86_32bit', 'XDG_VTNR': '2', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_web_cam', 'CUDA_HOME': '/home/oleg/tools/cuda', 'CLUTTER_IM_MODULE': 'xim', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'LC_NUMERIC': 'ru_RU.UTF-8', 'PYTHONPATH': '/home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_web_cam/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages', 'LC_PAPER': 'ru_RU.UTF-8', 'COLCON': '1', 'GENICAM_GENTL64_PATH': '/opt/Vimba_4_0/VimbaGigETL/CTI/x86_64bit', 'VTE_VERSION': '5202', 'CUDA_INC_DIR': '/usr/local/cuda/include'}, 'shell': False}
+[0.296641] (iciclespy_msg) StdoutLine: {'line': b'-- Found rosidl_default_generators: 0.8.0 (/opt/ros/eloquent/share/rosidl_default_generators/cmake)\n'}
+[0.299632] (-) TimerEvent: {}
+[0.389878] (iciclespy_msg) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.6.9") \n'}
+[0.399737] (-) TimerEvent: {}
+[0.499946] (-) TimerEvent: {}
+[0.507113] (iciclespy_web_cam) StdoutLine: {'line': b'running egg_info\n'}
+[0.507719] (iciclespy_web_cam) StdoutLine: {'line': b'writing ../../build/iciclespy_web_cam/iciclespy_web_cam.egg-info/PKG-INFO\n'}
+[0.507908] (iciclespy_web_cam) StdoutLine: {'line': b'writing dependency_links to ../../build/iciclespy_web_cam/iciclespy_web_cam.egg-info/dependency_links.txt\n'}
+[0.508081] (iciclespy_web_cam) StdoutLine: {'line': b'writing entry points to ../../build/iciclespy_web_cam/iciclespy_web_cam.egg-info/entry_points.txt\n'}
+[0.508240] (iciclespy_web_cam) StdoutLine: {'line': b'writing requirements to ../../build/iciclespy_web_cam/iciclespy_web_cam.egg-info/requires.txt\n'}
+[0.508309] (iciclespy_web_cam) StdoutLine: {'line': b'writing top-level names to ../../build/iciclespy_web_cam/iciclespy_web_cam.egg-info/top_level.txt\n'}
+[0.533882] (iciclespy_web_cam) StdoutLine: {'line': b"reading manifest file '../../build/iciclespy_web_cam/iciclespy_web_cam.egg-info/SOURCES.txt'\n"}
+[0.534861] (iciclespy_web_cam) StdoutLine: {'line': b"writing manifest file '../../build/iciclespy_web_cam/iciclespy_web_cam.egg-info/SOURCES.txt'\n"}
+[0.535063] (iciclespy_web_cam) StdoutLine: {'line': b'running build\n'}
+[0.535237] (iciclespy_web_cam) StdoutLine: {'line': b'running build_py\n'}
+[0.535312] (iciclespy_web_cam) StdoutLine: {'line': b'running install\n'}
+[0.535460] (iciclespy_web_cam) StdoutLine: {'line': b'running install_lib\n'}
+[0.536112] (iciclespy_web_cam) StdoutLine: {'line': b'running install_data\n'}
+[0.536552] (iciclespy_web_cam) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.538255] (iciclespy_web_cam) StdoutLine: {'line': b"removing '/home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_web_cam/lib/python3.6/site-packages/iciclespy_web_cam-0.0.0-py3.6.egg-info' (and everything under it)\n"}
+[0.538429] (iciclespy_web_cam) StdoutLine: {'line': b'Copying ../../build/iciclespy_web_cam/iciclespy_web_cam.egg-info to /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_web_cam/lib/python3.6/site-packages/iciclespy_web_cam-0.0.0-py3.6.egg-info\n'}
+[0.539063] (iciclespy_web_cam) StdoutLine: {'line': b'running install_scripts\n'}
+[0.553350] (iciclespy_web_cam) StdoutLine: {'line': b"writing list of installed files to '/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_web_cam/install.log'\n"}
+[0.568967] (iciclespy_web_cam) CommandEnded: {'returncode': 0}
+[0.585250] (iciclespy_web_cam) JobEnded: {'identifier': 'iciclespy_web_cam', 'rc': 0}
+[0.600043] (-) TimerEvent: {}
+[0.659167] (iciclespy_msg) StdoutLine: {'line': b'-- Using single matching rosidl_typesupport_c: rosidl_typesupport_fastrtps_c\n'}
+[0.700157] (-) TimerEvent: {}
+[0.702737] (iciclespy_msg) StdoutLine: {'line': b'-- Using single matching rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp\n'}
+[0.800277] (-) TimerEvent: {}
+[0.900524] (-) TimerEvent: {}
+[0.941973] (iciclespy_msg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 0.8.1 (/opt/ros/eloquent/share/rmw_implementation_cmake/cmake)\n'}
+[0.964129] (iciclespy_msg) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3.5") \n'}
+[0.964360] (iciclespy_msg) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.0 (/opt/ros/eloquent/share/python_cmake_module/cmake)\n'}
+[0.986749] (iciclespy_msg) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.986888] (iciclespy_msg) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.6m\n'}
+[0.986956] (iciclespy_msg) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.6m.so\n'}
+[1.000585] (-) TimerEvent: {}
+[1.098605] (iciclespy_msg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.8.1 (/opt/ros/eloquent/share/ament_lint_auto/cmake)\n'}
+[1.100652] (-) TimerEvent: {}
+[1.107399] (iciclespy_msg) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.108226] (iciclespy_msg) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.109414] (iciclespy_msg) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.200862] (-) TimerEvent: {}
+[1.301488] (-) TimerEvent: {}
+[1.401734] (-) TimerEvent: {}
+[1.502047] (-) TimerEvent: {}
+[1.582397] (iciclespy_msg) StdoutLine: {'line': b'-- Generating done\n'}
+[1.585738] (iciclespy_msg) StdoutLine: {'line': b'-- Build files have been written to: /home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg\n'}
+[1.596772] (iciclespy_msg) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.601204] (iciclespy_msg) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.602118] (-) TimerEvent: {}
+[1.702342] (-) TimerEvent: {}
+[1.802595] (-) TimerEvent: {}
+[1.847681] (iciclespy_msg) StdoutLine: {'line': b'[  5%] Built target iciclespy_msg__cpp\n'}
+[1.852521] (iciclespy_msg) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.853126] (iciclespy_msg) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.875555] (iciclespy_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target iciclespy_msg__rosidl_generator_c\x1b[0m\n'}
+[1.902705] (-) TimerEvent: {}
+[1.921739] (iciclespy_msg) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/iciclespy_msg__rosidl_generator_c.dir/rosidl_generator_c/iciclespy_msg/msg/image_msg_request__functions.c.o\x1b[0m\n'}
+[1.921942] (iciclespy_msg) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/iciclespy_msg__rosidl_generator_c.dir/rosidl_generator_c/iciclespy_msg/srv/image_msg_request__functions.c.o\x1b[0m\n'}
+[1.965791] (iciclespy_msg) StdoutLine: {'line': b'[ 18%] \x1b[32m\x1b[1mLinking C shared library libiciclespy_msg__rosidl_generator_c.so\x1b[0m\n'}
+[1.999075] (iciclespy_msg) StdoutLine: {'line': b'[ 18%] Built target iciclespy_msg__rosidl_generator_c\n'}
+[2.002820] (-) TimerEvent: {}
+[2.004900] (iciclespy_msg) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.097185] (iciclespy_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target iciclespy_msg__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[2.102927] (-) TimerEvent: {}
+[2.104047] (iciclespy_msg) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/iciclespy_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/iciclespy_msg/msg/image_msg_request__type_support.cpp.o\x1b[0m\n'}
+[2.105082] (iciclespy_msg) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/iciclespy_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/iciclespy_msg/srv/image_msg_request__type_support.cpp.o\x1b[0m\n'}
+[2.176802] (iciclespy_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target iciclespy_msg__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[2.185126] (iciclespy_msg) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/iciclespy_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/iciclespy_msg/msg/dds_fastrtps/image_msg_request__type_support.cpp.o\x1b[0m\n'}
+[2.185950] (iciclespy_msg) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/iciclespy_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/iciclespy_msg/srv/dds_fastrtps/image_msg_request__type_support.cpp.o\x1b[0m\n'}
+[2.203025] (-) TimerEvent: {}
+[2.279528] (iciclespy_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target iciclespy_msg__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[2.303127] (-) TimerEvent: {}
+[2.342408] (iciclespy_msg) StdoutLine: {'line': b'[ 35%] \x1b[32m\x1b[1mLinking CXX shared library libiciclespy_msg__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[2.346104] (iciclespy_msg) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object CMakeFiles/iciclespy_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/iciclespy_msg/msg/image_msg_request__type_support.c.o\x1b[0m\n'}
+[2.346287] (iciclespy_msg) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object CMakeFiles/iciclespy_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/iciclespy_msg/srv/image_msg_request__type_support.c.o\x1b[0m\n'}
+[2.371833] (iciclespy_msg) StdoutLine: {'line': b'[ 43%] \x1b[32m\x1b[1mLinking C shared library libiciclespy_msg__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.400964] (iciclespy_msg) StdoutLine: {'line': b'[ 43%] Built target iciclespy_msg__rosidl_typesupport_introspection_cpp\n'}
+[2.401532] (iciclespy_msg) StdoutLine: {'line': b'[ 43%] Built target iciclespy_msg__rosidl_typesupport_introspection_c\n'}
+[2.403197] (-) TimerEvent: {}
+[2.503460] (-) TimerEvent: {}
+[2.550200] (iciclespy_msg) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX shared library libiciclespy_msg__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[2.603567] (-) TimerEvent: {}
+[2.616908] (iciclespy_msg) StdoutLine: {'line': b'[ 45%] Built target iciclespy_msg__rosidl_typesupport_fastrtps_cpp\n'}
+[2.621750] (iciclespy_msg) StdoutLine: {'line': b'[ 51%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.621918] (iciclespy_msg) StdoutLine: {'line': b'[ 51%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.703676] (-) TimerEvent: {}
+[2.803910] (-) TimerEvent: {}
+[2.839255] (iciclespy_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target iciclespy_msg__rosidl_typesupport_cpp\x1b[0m\n'}
+[2.847540] (iciclespy_msg) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/iciclespy_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iciclespy_msg/msg/image_msg_request__type_support.cpp.o\x1b[0m\n'}
+[2.847750] (iciclespy_msg) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/iciclespy_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/iciclespy_msg/srv/image_msg_request__type_support.cpp.o\x1b[0m\n'}
+[2.880670] (iciclespy_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target iciclespy_msg__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[2.891493] (iciclespy_msg) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/iciclespy_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/iciclespy_msg/srv/image_msg_request__type_support_c.cpp.o\x1b[0m\n'}
+[2.891972] (iciclespy_msg) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/iciclespy_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/iciclespy_msg/msg/image_msg_request__type_support_c.cpp.o\x1b[0m\n'}
+[2.904009] (-) TimerEvent: {}
+[3.004299] (-) TimerEvent: {}
+[3.104595] (-) TimerEvent: {}
+[3.167277] (iciclespy_msg) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libiciclespy_msg__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.170944] (iciclespy_msg) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libiciclespy_msg__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[3.204710] (-) TimerEvent: {}
+[3.258386] (iciclespy_msg) StdoutLine: {'line': b'[ 67%] Built target iciclespy_msg__rosidl_typesupport_cpp\n'}
+[3.259203] (iciclespy_msg) StdoutLine: {'line': b'[ 67%] Built target iciclespy_msg__rosidl_typesupport_fastrtps_c\n'}
+[3.265186] (iciclespy_msg) StdoutLine: {'line': b'[ 70%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.304798] (-) TimerEvent: {}
+[3.405026] (-) TimerEvent: {}
+[3.481236] (iciclespy_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target iciclespy_msg__rosidl_typesupport_c\x1b[0m\n'}
+[3.488218] (iciclespy_msg) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/iciclespy_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/iciclespy_msg/srv/image_msg_request__type_support.cpp.o\x1b[0m\n'}
+[3.488362] (iciclespy_msg) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/iciclespy_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/iciclespy_msg/msg/image_msg_request__type_support.cpp.o\x1b[0m\n'}
+[3.505144] (-) TimerEvent: {}
+[3.516393] (iciclespy_msg) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX shared library libiciclespy_msg__rosidl_typesupport_c.so\x1b[0m\n'}
+[3.568753] (iciclespy_msg) StdoutLine: {'line': b'[ 78%] Built target iciclespy_msg__rosidl_typesupport_c\n'}
+[3.572451] (iciclespy_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target iciclespy_msg\x1b[0m\n'}
+[3.576513] (iciclespy_msg) StdoutLine: {'line': b'[ 78%] Built target iciclespy_msg\n'}
+[3.580525] (iciclespy_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target iciclespy_msg__py\x1b[0m\n'}
+[3.585024] (iciclespy_msg) StdoutLine: {'line': b'[ 81%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[3.605249] (-) TimerEvent: {}
+[3.705476] (-) TimerEvent: {}
+[3.805703] (-) TimerEvent: {}
+[3.906040] (-) TimerEvent: {}
+[4.006281] (-) TimerEvent: {}
+[4.067017] (iciclespy_msg) StdoutLine: {'line': b'[ 81%] Built target iciclespy_msg__py\n'}
+[4.071189] (iciclespy_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target iciclespy_msg__python\x1b[0m\n'}
+[4.085198] (iciclespy_msg) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/iciclespy_msg__python.dir/rosidl_generator_py/iciclespy_msg/msg/_image_msg_request_s.c.o\x1b[0m\n'}
+[4.085428] (iciclespy_msg) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/iciclespy_msg__python.dir/rosidl_generator_py/iciclespy_msg/srv/_image_msg_request_s.c.o\x1b[0m\n'}
+[4.106398] (-) TimerEvent: {}
+[4.159718] (iciclespy_msg) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/iciclespy_msg/libiciclespy_msg__python.so\x1b[0m\n'}
+[4.206514] (-) TimerEvent: {}
+[4.218912] (iciclespy_msg) StdoutLine: {'line': b'[ 89%] Built target iciclespy_msg__python\n'}
+[4.223393] (iciclespy_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target iciclespy_msg__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[4.223527] (iciclespy_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target iciclespy_msg__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[4.234413] (iciclespy_msg) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/iciclespy_msg__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/iciclespy_msg/_iciclespy_msg_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[4.234594] (iciclespy_msg) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/iciclespy_msg__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/iciclespy_msg/_iciclespy_msg_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[4.294034] (iciclespy_msg) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/iciclespy_msg/iciclespy_msg_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.294202] (iciclespy_msg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/iciclespy_msg/iciclespy_msg_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.306613] (-) TimerEvent: {}
+[4.369901] (iciclespy_msg) StdoutLine: {'line': b'[100%] Built target iciclespy_msg__rosidl_typesupport_c__pyext\n'}
+[4.370606] (iciclespy_msg) StdoutLine: {'line': b'[100%] Built target iciclespy_msg__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.374399] (iciclespy_msg) CommandEnded: {'returncode': 0}
+[4.406806] (-) TimerEvent: {}
+[4.427945] (iciclespy_msg) JobProgress: {'identifier': 'iciclespy_msg', 'progress': 'install'}
+[4.432264] (iciclespy_msg) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg'], 'cwd': '/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'oleg'), ('LC_TIME', 'ru_RU.UTF-8'), ('TEXTDOMAIN', 'im-config'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '2841'), ('XDG_SESSION_TYPE', 'x11'), ('CUDA_INSTALL_DIR', '/usr/local/cuda/bin'), ('LD_LIBRARY_PATH', '/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib:/home/oleg/Documents/onnx-tensorrt/build:/opt/aravis/build/src'), ('SHLVL', '1'), ('OLDPWD', '/home/oleg/Documents/Github/IcicleSpy3/device/src'), ('QT4_IM_MODULE', 'xim'), ('HOME', '/home/oleg'), ('DESKTOP_SESSION', 'ubuntu'), ('GI_TYPELIB_PATH', '/opt/aravis/build/src'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('FAKE_GENICAM_PATH', '/opt/aravis/src/arv-fake-camera.xml'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '2'), ('ROS_DISTRO', 'eloquent'), ('LOGNAME', 'oleg'), ('GTK_IM_MODULE', 'ibus'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USERNAME', 'oleg'), ('XDG_SESSION_ID', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda/bin:/opt/ros/eloquent/bin:/home/oleg/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/asus-pc:@/tmp/.ICE-unix/2746,unix/asus-pc:/tmp/.ICE-unix/2746'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/604cdd48_60ff_48ec_9bf7_72f49c677cd3'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('GNOME_TERMINAL_SERVICE', ':1.74'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('AMENT_PREFIX_PATH', '/opt/ros/eloquent'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'ru_RU.UTF-8'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('TEXTDOMAINDIR', '/usr/share/locale/'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('GENICAM_GENTL32_PATH', '/opt/Vimba_4_0/VimbaGigETL/CTI/x86_32bit'), ('XDG_VTNR', '2'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg'), ('CUDA_HOME', '/home/oleg/tools/cuda'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('PYTHONPATH', '/opt/ros/eloquent/lib/python3.6/site-packages'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('GENICAM_GENTL64_PATH', '/opt/Vimba_4_0/VimbaGigETL/CTI/x86_64bit'), ('VTE_VERSION', '5202'), ('CUDA_INC_DIR', '/usr/local/cuda/include'), ('CMAKE_PREFIX_PATH', '/opt/ros/eloquent')]), 'shell': False}
+[4.435184] (iciclespy_msg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.435340] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/share/ament_index/resource_index/rosidl_interfaces/iciclespy_msg\n'}
+[4.435474] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg\n'}
+[4.435605] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/srv\n'}
+[4.435705] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/srv/image_msg_request.hpp\n'}
+[4.435819] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/srv/image_msg_request__traits.hpp\n'}
+[4.435928] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/srv/image_msg_request__struct.hpp\n'}
+[4.436011] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/msg\n'}
+[4.436135] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/msg/image_msg_request.hpp\n'}
+[4.436198] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/msg/image_msg_request__traits.hpp\n'}
+[4.436274] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/msg/image_msg_request__struct.hpp\n'}
+[4.436355] (iciclespy_msg) StdoutLine: {'line': b'-- Up-to-date: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg\n'}
+[4.436474] (iciclespy_msg) StdoutLine: {'line': b'-- Up-to-date: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/srv\n'}
+[4.436617] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/srv/image_msg_request__functions.h\n'}
+[4.436747] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/srv/image_msg_request__type_support.h\n'}
+[4.436889] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/srv/image_msg_request__functions.c\n'}
+[4.437018] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/srv/image_msg_request__struct.h\n'}
+[4.437149] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/srv/image_msg_request.h\n'}
+[4.437217] (iciclespy_msg) StdoutLine: {'line': b'-- Up-to-date: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/msg\n'}
+[4.437293] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/msg/image_msg_request__functions.h\n'}
+[4.437353] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/msg/image_msg_request__type_support.h\n'}
+[4.437413] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/msg/rosidl_generator_c__visibility_control.h\n'}
+[4.437477] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/msg/image_msg_request__functions.c\n'}
+[4.437539] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/msg/image_msg_request__struct.h\n'}
+[4.437622] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/msg/image_msg_request.h\n'}
+[4.437715] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/share/iciclespy_msg/environment/library_path.sh\n'}
+[4.437775] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/share/iciclespy_msg/environment/library_path.dsv\n'}
+[4.437835] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/lib/libiciclespy_msg__rosidl_generator_c.so\n'}
+[4.437898] (iciclespy_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/lib/libiciclespy_msg__rosidl_generator_c.so" to ""\n'}
+[4.438011] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/lib/libiciclespy_msg__rosidl_typesupport_c.so\n'}
+[4.438071] (iciclespy_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/lib/libiciclespy_msg__rosidl_typesupport_c.so" to ""\n'}
+[4.438131] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/lib/libiciclespy_msg__rosidl_typesupport_cpp.so\n'}
+[4.438260] (iciclespy_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/lib/libiciclespy_msg__rosidl_typesupport_cpp.so" to ""\n'}
+[4.438386] (iciclespy_msg) StdoutLine: {'line': b'-- Up-to-date: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg\n'}
+[4.438486] (iciclespy_msg) StdoutLine: {'line': b'-- Up-to-date: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/srv\n'}
+[4.438597] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/srv/image_msg_request__type_support.c\n'}
+[4.438702] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/srv/image_msg_request__rosidl_typesupport_introspection_c.h\n'}
+[4.438768] (iciclespy_msg) StdoutLine: {'line': b'-- Up-to-date: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/msg\n'}
+[4.438860] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/msg/image_msg_request__type_support.c\n'}
+[4.438922] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[4.438982] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/msg/image_msg_request__rosidl_typesupport_introspection_c.h\n'}
+[4.439046] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/lib/libiciclespy_msg__rosidl_typesupport_introspection_c.so\n'}
+[4.439194] (iciclespy_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/lib/libiciclespy_msg__rosidl_typesupport_introspection_c.so" to ""\n'}
+[4.439282] (iciclespy_msg) StdoutLine: {'line': b'-- Up-to-date: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg\n'}
+[4.439407] (iciclespy_msg) StdoutLine: {'line': b'-- Up-to-date: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/srv\n'}
+[4.439472] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/srv/image_msg_request__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.439567] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/srv/image_msg_request__type_support.cpp\n'}
+[4.439630] (iciclespy_msg) StdoutLine: {'line': b'-- Up-to-date: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/msg\n'}
+[4.439690] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/msg/image_msg_request__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.439754] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/msg/image_msg_request__type_support.cpp\n'}
+[4.439845] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/lib/libiciclespy_msg__rosidl_typesupport_introspection_cpp.so\n'}
+[4.439995] (iciclespy_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/lib/libiciclespy_msg__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[4.440104] (iciclespy_msg) StdoutLine: {'line': b'-- Up-to-date: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg\n'}
+[4.440173] (iciclespy_msg) StdoutLine: {'line': b'-- Up-to-date: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/srv\n'}
+[4.440260] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/srv/image_msg_request__rosidl_typesupport_fastrtps_c.h\n'}
+[4.440321] (iciclespy_msg) StdoutLine: {'line': b'-- Up-to-date: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/msg\n'}
+[4.440380] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/msg/image_msg_request__rosidl_typesupport_fastrtps_c.h\n'}
+[4.440439] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[4.440575] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/lib/libiciclespy_msg__rosidl_typesupport_fastrtps_c.so\n'}
+[4.440672] (iciclespy_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/lib/libiciclespy_msg__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[4.440805] (iciclespy_msg) StdoutLine: {'line': b'-- Up-to-date: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg\n'}
+[4.440900] (iciclespy_msg) StdoutLine: {'line': b'-- Up-to-date: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/srv\n'}
+[4.440986] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/srv/image_msg_request__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.441082] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/srv/dds_fastrtps\n'}
+[4.441145] (iciclespy_msg) StdoutLine: {'line': b'-- Up-to-date: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/msg\n'}
+[4.441205] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/msg/image_msg_request__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.441265] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[4.441378] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/include/iciclespy_msg/msg/dds_fastrtps\n'}
+[4.441447] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/lib/libiciclespy_msg__rosidl_typesupport_fastrtps_cpp.so\n'}
+[4.441534] (iciclespy_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/lib/libiciclespy_msg__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[4.441619] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/share/iciclespy_msg/environment/pythonpath.sh\n'}
+[4.441684] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/share/iciclespy_msg/environment/pythonpath.dsv\n'}
+[4.441744] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/lib/python3.6/site-packages/iciclespy_msg/__init__.py\n'}
+[4.468832] (iciclespy_msg) StdoutLine: {'line': b"Compiling '/home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/lib/python3.6/site-packages/iciclespy_msg/__init__.py'...\n"}
+[4.471801] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/lib/python3.6/site-packages/iciclespy_msg/msg\n'}
+[4.471951] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/lib/python3.6/site-packages/iciclespy_msg/msg/_image_msg_request.py\n'}
+[4.472075] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/lib/python3.6/site-packages/iciclespy_msg/msg/_image_msg_request_s.c\n'}
+[4.472180] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/lib/python3.6/site-packages/iciclespy_msg/msg/__init__.py\n'}
+[4.472275] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/lib/python3.6/site-packages/iciclespy_msg/srv\n'}
+[4.472390] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/lib/python3.6/site-packages/iciclespy_msg/srv/_image_msg_request.py\n'}
+[4.472454] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/lib/python3.6/site-packages/iciclespy_msg/srv/_image_msg_request_s.c\n'}
+[4.472580] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/lib/python3.6/site-packages/iciclespy_msg/srv/__init__.py\n'}
+[4.472646] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/lib/python3.6/site-packages/iciclespy_msg/iciclespy_msg_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so\n'}
+[4.472797] (iciclespy_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/lib/python3.6/site-packages/iciclespy_msg/iciclespy_msg_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so" to ""\n'}
+[4.472898] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/lib/python3.6/site-packages/iciclespy_msg/iciclespy_msg_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so\n'}
+[4.473158] (iciclespy_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/lib/python3.6/site-packages/iciclespy_msg/iciclespy_msg_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so" to ""\n'}
+[4.473257] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/lib/libiciclespy_msg__python.so\n'}
+[4.473517] (iciclespy_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/lib/libiciclespy_msg__python.so" to ""\n'}
+[4.473616] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/share/iciclespy_msg/msg/ImageMsgRequest.idl\n'}
+[4.473718] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/share/iciclespy_msg/srv/ImageMsgRequest.idl\n'}
+[4.473818] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/share/iciclespy_msg/msg/ImageMsgRequest.msg\n'}
+[4.473925] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/share/iciclespy_msg/srv/ImageMsgRequest.srv\n'}
+[4.474016] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/share/iciclespy_msg/srv/ImageMsgRequest_Request.msg\n'}
+[4.474107] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/share/iciclespy_msg/srv/ImageMsgRequest_Response.msg\n'}
+[4.474218] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/share/ament_index/resource_index/package_run_dependencies/iciclespy_msg\n'}
+[4.474348] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/share/ament_index/resource_index/parent_prefix_path/iciclespy_msg\n'}
+[4.474448] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/share/iciclespy_msg/environment/ament_prefix_path.sh\n'}
+[4.474549] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/share/iciclespy_msg/environment/ament_prefix_path.dsv\n'}
+[4.474651] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/share/iciclespy_msg/environment/path.sh\n'}
+[4.474741] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/share/iciclespy_msg/environment/path.dsv\n'}
+[4.474837] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/share/iciclespy_msg/local_setup.bash\n'}
+[4.474928] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/share/iciclespy_msg/local_setup.sh\n'}
+[4.475031] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/share/iciclespy_msg/local_setup.zsh\n'}
+[4.475125] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/share/iciclespy_msg/local_setup.dsv\n'}
+[4.475218] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/share/iciclespy_msg/package.dsv\n'}
+[4.475338] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/share/ament_index/resource_index/packages/iciclespy_msg\n'}
+[4.475454] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/share/iciclespy_msg/cmake/rosidl_cmake-extras.cmake\n'}
+[4.475550] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/share/iciclespy_msg/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.475645] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/share/iciclespy_msg/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.475747] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/share/iciclespy_msg/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.475843] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/share/iciclespy_msg/cmake/iciclespy_msgConfig.cmake\n'}
+[4.475935] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/share/iciclespy_msg/cmake/iciclespy_msgConfig-version.cmake\n'}
+[4.476024] (iciclespy_msg) StdoutLine: {'line': b'-- Installing: /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg/share/iciclespy_msg/package.xml\n'}
+[4.477131] (iciclespy_msg) CommandEnded: {'returncode': 0}
+[4.506937] (-) TimerEvent: {}
+[4.552138] (iciclespy_msg) JobEnded: {'identifier': 'iciclespy_msg', 'rc': 0}
+[4.552631] (-) EventReactorShutdown: {}

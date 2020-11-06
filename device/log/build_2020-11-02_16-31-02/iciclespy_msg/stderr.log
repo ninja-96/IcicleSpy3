@@ -1,0 +1,8 @@
+CMake Error at /opt/ros/eloquent/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:93 (message):
+  rosidl_generate_interfaces() the passed file 'msg/Req.msg' doesn't exist
+  relative to the CMAKE_CURRENT_SOURCE_DIR
+  '/home/oleg/Documents/Github/IcicleSpy3/device/src/iciclespy_msg'
+Call Stack (most recent call first):
+  CMakeLists.txt:26 (rosidl_generate_interfaces)
+
+

@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from iciclespy_msg/srv/ImageMsgRequest.srv
+// generated code does not contain a copyright notice
+
+#include "sensor_msgs/msg/Image.idl"
+
+module iciclespy_msg {
+  module srv {
+    struct ImageMsgRequest_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct ImageMsgRequest_Response {
+      sensor_msgs::msg::Image image;
+    };
+  };
+};

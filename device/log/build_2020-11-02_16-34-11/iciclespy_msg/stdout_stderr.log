@@ -1,0 +1,23 @@
+-- Found ament_cmake: 0.8.2 (/opt/ros/eloquent/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+CMake Error at CMakeLists.txt:24 (find_package):
+  By not providing "Findsensor_msg.cmake" in CMAKE_MODULE_PATH this project
+  has asked CMake to find a package configuration file provided by
+  "sensor_msg", but CMake did not find one.
+
+  Could not find a package configuration file provided by "sensor_msg" with
+  any of the following names:
+
+    sensor_msgConfig.cmake
+    sensor_msg-config.cmake
+
+  Add the installation prefix of "sensor_msg" to CMAKE_PREFIX_PATH or set
+  "sensor_msg_DIR" to a directory containing one of the above files.  If
+  "sensor_msg" provides a separate development package or SDK, be sure it has
+  been installed.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg/CMakeFiles/CMakeOutput.log".
+make: *** [cmake_check_build_system] Error 1
+Makefile:963: recipe for target 'cmake_check_build_system' failed

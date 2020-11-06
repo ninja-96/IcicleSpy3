@@ -1,0 +1,25 @@
+[0.032s] Invoking command in '/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg': CMAKE_PREFIX_PATH=/opt/ros/eloquent /usr/local/bin/cmake --build /home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg -- -j8 -l8
+[0.045s] -- Found ament_cmake: 0.8.2 (/opt/ros/eloquent/share/ament_cmake/cmake)
+[0.075s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.274s] CMake Error at CMakeLists.txt:24 (find_package):
+[0.274s]   By not providing "Findsensor_msg.cmake" in CMAKE_MODULE_PATH this project
+[0.274s]   has asked CMake to find a package configuration file provided by
+[0.274s]   "sensor_msg", but CMake did not find one.
+[0.274s] 
+[0.274s]   Could not find a package configuration file provided by "sensor_msg" with
+[0.275s]   any of the following names:
+[0.275s] 
+[0.275s]     sensor_msgConfig.cmake
+[0.275s]     sensor_msg-config.cmake
+[0.275s] 
+[0.275s]   Add the installation prefix of "sensor_msg" to CMAKE_PREFIX_PATH or set
+[0.275s]   "sensor_msg_DIR" to a directory containing one of the above files.  If
+[0.275s]   "sensor_msg" provides a separate development package or SDK, be sure it has
+[0.275s]   been installed.
+[0.275s] 
+[0.275s] 
+[0.275s] -- Configuring incomplete, errors occurred!
+[0.275s] See also "/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg/CMakeFiles/CMakeOutput.log".
+[0.276s] Makefile:963: recipe for target 'cmake_check_build_system' failed
+[0.276s] make: *** [cmake_check_build_system] Error 1
+[0.293s] Invoked command in '/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg' returned '2': CMAKE_PREFIX_PATH=/opt/ros/eloquent /usr/local/bin/cmake --build /home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg -- -j8 -l8

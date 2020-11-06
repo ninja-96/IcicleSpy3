@@ -1,0 +1,16 @@
+-- Found ament_cmake: 0.8.2 (/opt/ros/eloquent/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found std_msgs: 0.8.1 (/opt/ros/eloquent/share/std_msgs/cmake)
+-- Found rosidl_adapter: 0.8.2 (/opt/ros/eloquent/share/rosidl_adapter/cmake)
+-- Found rosidl_default_generators: 0.8.0 (/opt/ros/eloquent/share/rosidl_default_generators/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found version "3.6.9") 
+CMake Error at /opt/ros/eloquent/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:162 (message):
+  rosidl_generate_interfaces() the passed dependency 'sensor_msg' has not
+  been found before using find_package()
+Call Stack (most recent call first):
+  CMakeLists.txt:26 (rosidl_generate_interfaces)
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg/CMakeFiles/CMakeOutput.log".

@@ -1,0 +1,5 @@
+-- Found ament_cmake: 0.8.2 (/opt/ros/eloquent/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Configuring incomplete, errors occurred!
+See also "/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg/CMakeFiles/CMakeOutput.log".
+Makefile:963: recipe for target 'cmake_check_build_system' failed

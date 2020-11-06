@@ -1,0 +1,18 @@
+[0.029s] Invoking command in '/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg': CMAKE_PREFIX_PATH=/opt/ros/eloquent /usr/local/bin/cmake /home/oleg/Documents/Github/IcicleSpy3/device/src/iciclespy_msg -DCMAKE_INSTALL_PREFIX=/home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg
+[0.038s] -- Found ament_cmake: 0.8.2 (/opt/ros/eloquent/share/ament_cmake/cmake)
+[0.060s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+[0.060s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.252s] -- Found std_msgs: 0.8.1 (/opt/ros/eloquent/share/std_msgs/cmake)
+[0.258s] -- Found rosidl_adapter: 0.8.2 (/opt/ros/eloquent/share/rosidl_adapter/cmake)
+[0.282s] -- Found rosidl_default_generators: 0.8.0 (/opt/ros/eloquent/share/rosidl_default_generators/cmake)
+[0.377s] -- Found PythonInterp: /usr/bin/python3 (found version "3.6.9") 
+[0.438s] CMake Error at /opt/ros/eloquent/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:162 (message):
+[0.438s]   rosidl_generate_interfaces() the passed dependency 'sensor_msg' has not
+[0.438s]   been found before using find_package()
+[0.438s] Call Stack (most recent call first):
+[0.438s]   CMakeLists.txt:26 (rosidl_generate_interfaces)
+[0.438s] 
+[0.438s] 
+[0.438s] -- Configuring incomplete, errors occurred!
+[0.438s] See also "/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg/CMakeFiles/CMakeOutput.log".
+[0.442s] Invoked command in '/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg' returned '1': CMAKE_PREFIX_PATH=/opt/ros/eloquent /usr/local/bin/cmake /home/oleg/Documents/Github/IcicleSpy3/device/src/iciclespy_msg -DCMAKE_INSTALL_PREFIX=/home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg

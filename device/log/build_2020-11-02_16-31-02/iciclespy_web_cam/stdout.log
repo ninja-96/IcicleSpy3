@@ -1,0 +1,31 @@
+running egg_info
+creating ../../build/iciclespy_web_cam/iciclespy_web_cam.egg-info
+writing ../../build/iciclespy_web_cam/iciclespy_web_cam.egg-info/PKG-INFO
+writing dependency_links to ../../build/iciclespy_web_cam/iciclespy_web_cam.egg-info/dependency_links.txt
+writing entry points to ../../build/iciclespy_web_cam/iciclespy_web_cam.egg-info/entry_points.txt
+writing requirements to ../../build/iciclespy_web_cam/iciclespy_web_cam.egg-info/requires.txt
+writing top-level names to ../../build/iciclespy_web_cam/iciclespy_web_cam.egg-info/top_level.txt
+writing manifest file '../../build/iciclespy_web_cam/iciclespy_web_cam.egg-info/SOURCES.txt'
+reading manifest file '../../build/iciclespy_web_cam/iciclespy_web_cam.egg-info/SOURCES.txt'
+writing manifest file '../../build/iciclespy_web_cam/iciclespy_web_cam.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_web_cam/build
+creating /home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_web_cam/build/lib
+creating /home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_web_cam/build/lib/iciclespy_web_cam
+copying iciclespy_web_cam/__init__.py -> /home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_web_cam/build/lib/iciclespy_web_cam
+running install
+running install_lib
+creating /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_web_cam/lib/python3.6/site-packages/iciclespy_web_cam
+copying /home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_web_cam/build/lib/iciclespy_web_cam/__init__.py -> /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_web_cam/lib/python3.6/site-packages/iciclespy_web_cam
+byte-compiling /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_web_cam/lib/python3.6/site-packages/iciclespy_web_cam/__init__.py to __init__.cpython-36.pyc
+running install_data
+creating /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_web_cam/share/ament_index
+creating /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_web_cam/share/ament_index/resource_index
+creating /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_web_cam/share/ament_index/resource_index/packages
+copying resource/iciclespy_web_cam -> /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_web_cam/share/ament_index/resource_index/packages
+copying package.xml -> /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_web_cam/share/iciclespy_web_cam
+running install_egg_info
+Copying ../../build/iciclespy_web_cam/iciclespy_web_cam.egg-info to /home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_web_cam/lib/python3.6/site-packages/iciclespy_web_cam-0.0.0-py3.6.egg-info
+running install_scripts
+writing list of installed files to '/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_web_cam/install.log'

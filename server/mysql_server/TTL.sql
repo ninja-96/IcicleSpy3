@@ -1,0 +1,5 @@
+CREATE EVENT   
+RowTTL 
+ON SCHEDULE EVERY 1 SECOND 
+DO 
+DELETE FROM test.test_table WHERE test.test_table.timestamp < NOW() - INTERVAL 10 SECOND;

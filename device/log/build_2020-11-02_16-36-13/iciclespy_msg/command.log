@@ -1,0 +1,4 @@
+Invoking command in '/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg': CMAKE_PREFIX_PATH=/opt/ros/eloquent /usr/local/bin/cmake --build /home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg -- -j8 -l8
+Invoked command in '/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/eloquent /usr/local/bin/cmake --build /home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg -- -j8 -l8
+Invoking command in '/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg': CMAKE_PREFIX_PATH=/opt/ros/eloquent /usr/local/bin/cmake --install /home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg
+Invoked command in '/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/eloquent /usr/local/bin/cmake --install /home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg

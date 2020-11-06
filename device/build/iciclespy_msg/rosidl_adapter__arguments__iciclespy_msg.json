@@ -1,0 +1,7 @@
+{
+  "package_name": "iciclespy_msg",
+  "non_idl_tuples": [
+    "/home/oleg/Documents/Github/IcicleSpy3/device/src/iciclespy_msg:msg/ImageMsgRequest.msg",
+    "/home/oleg/Documents/Github/IcicleSpy3/device/src/iciclespy_msg:srv/ImageMsgRequest.srv"
+  ]
+}

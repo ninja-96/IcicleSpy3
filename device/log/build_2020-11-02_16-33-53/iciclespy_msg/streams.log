@@ -1,0 +1,98 @@
+[0.028s] Invoking command in '/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg': CMAKE_PREFIX_PATH=/opt/ros/eloquent /usr/local/bin/cmake /home/oleg/Documents/Github/IcicleSpy3/device/src/iciclespy_msg -DCMAKE_INSTALL_PREFIX=/home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg
+[0.038s] -- Found ament_cmake: 0.8.2 (/opt/ros/eloquent/share/ament_cmake/cmake)
+[0.061s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.252s] -- Found rosidl_default_generators: 0.8.0 (/opt/ros/eloquent/share/rosidl_default_generators/cmake)
+[0.297s] -- Found rosidl_adapter: 0.8.2 (/opt/ros/eloquent/share/rosidl_adapter/cmake)
+[0.366s] -- Found PythonInterp: /usr/bin/python3 (found version "3.6.9") 
+[0.476s] -- Using single matching rosidl_typesupport_c: rosidl_typesupport_fastrtps_c
+[0.479s] -- Using single matching rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp
+[0.549s] -- Found rmw_implementation_cmake: 0.8.1 (/opt/ros/eloquent/share/rmw_implementation_cmake/cmake)
+[0.574s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3.5") 
+[0.574s] -- Found python_cmake_module: 0.8.0 (/opt/ros/eloquent/share/python_cmake_module/cmake)
+[0.598s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.6m.so (found suitable version "3.6.9", minimum required is "3.5") 
+[0.598s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.598s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.6m
+[0.598s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.6m.so
+[0.618s] -- Found PythonExtra: .so  
+[0.706s] -- Found ament_lint_auto: 0.8.1 (/opt/ros/eloquent/share/ament_lint_auto/cmake)
+[0.721s] -- Added test 'lint_cmake' to check CMake code style
+[0.722s] -- Added test 'xmllint' to check XML markup files
+[0.723s] -- Configuring done
+[0.755s] -- Generating done
+[0.756s] -- Build files have been written to: /home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg
+[0.760s] Invoked command in '/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/eloquent /usr/local/bin/cmake /home/oleg/Documents/Github/IcicleSpy3/device/src/iciclespy_msg -DCMAKE_INSTALL_PREFIX=/home/oleg/Documents/Github/IcicleSpy3/device/install/iciclespy_msg
+[0.763s] Invoking command in '/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg': CMAKE_PREFIX_PATH=/opt/ros/eloquent /usr/local/bin/cmake --build /home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg -- -j8 -l8
+[0.778s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.778s] [35m[1mScanning dependencies of target iciclespy_msg__cpp[0m
+[0.783s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.025s] [  5%] Built target iciclespy_msg__cpp
+[1.029s] [ 10%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.029s] [ 10%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.073s] [35m[1mScanning dependencies of target iciclespy_msg__rosidl_generator_c[0m
+[1.079s] [ 16%] [32mBuilding C object CMakeFiles/iciclespy_msg__rosidl_generator_c.dir/rosidl_generator_c/iciclespy_msg/msg/image_msg_request__functions.c.o[0m
+[1.079s] [ 16%] [32mBuilding C object CMakeFiles/iciclespy_msg__rosidl_generator_c.dir/rosidl_generator_c/iciclespy_msg/srv/image_msg_request__functions.c.o[0m
+[1.108s] In file included from [01m[K/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg/rosidl_generator_c/iciclespy_msg/srv/image_msg_request__functions.h:19:0[m[K,
+[1.108s]                  from [01m[K/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg/rosidl_generator_c/iciclespy_msg/srv/image_msg_request__functions.c:4[m[K:
+[1.109s] [01m[K/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg/rosidl_generator_c/iciclespy_msg/srv/image_msg_request__struct.h:41:10:[m[K [01;31m[Kfatal error: [m[Kiciclespy_msg/msg/image__struct.h: No such file or directory
+[1.109s]  #include [01;31m[K"iciclespy_msg/msg/image__struct.h"[m[K
+[1.109s]           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.109s] compilation terminated.
+[1.109s] In file included from [01m[K/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg/rosidl_generator_c/iciclespy_msg/msg/image_msg_request__functions.h:19:0[m[K,
+[1.109s]                  from [01m[K/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg/rosidl_generator_c/iciclespy_msg/msg/image_msg_request__functions.c:4[m[K:
+[1.109s] [01m[K/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg/rosidl_generator_c/iciclespy_msg/msg/image_msg_request__struct.h:22:10:[m[K [01;31m[Kfatal error: [m[Kiciclespy_msg/msg/image__struct.h: No such file or directory
+[1.109s]  #include [01;31m[K"iciclespy_msg/msg/image__struct.h"[m[K
+[1.109s]           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.109s] compilation terminated.
+[1.110s] make[2]: *** [CMakeFiles/iciclespy_msg__rosidl_generator_c.dir/rosidl_generator_c/iciclespy_msg/srv/image_msg_request__functions.c.o] Error 1
+[1.110s] make[2]: *** Waiting for unfinished jobs....
+[1.110s] CMakeFiles/iciclespy_msg__rosidl_generator_c.dir/build.make:139: recipe for target 'CMakeFiles/iciclespy_msg__rosidl_generator_c.dir/rosidl_generator_c/iciclespy_msg/srv/image_msg_request__functions.c.o' failed
+[1.110s] CMakeFiles/iciclespy_msg__rosidl_generator_c.dir/build.make:126: recipe for target 'CMakeFiles/iciclespy_msg__rosidl_generator_c.dir/rosidl_generator_c/iciclespy_msg/msg/image_msg_request__functions.c.o' failed
+[1.110s] make[2]: *** [CMakeFiles/iciclespy_msg__rosidl_generator_c.dir/rosidl_generator_c/iciclespy_msg/msg/image_msg_request__functions.c.o] Error 1
+[1.110s] make[1]: *** [CMakeFiles/iciclespy_msg__rosidl_generator_c.dir/all] Error 2
+[1.110s] make[1]: *** Waiting for unfinished jobs....
+[1.110s] CMakeFiles/Makefile2:255: recipe for target 'CMakeFiles/iciclespy_msg__rosidl_generator_c.dir/all' failed
+[1.265s] [35m[1mScanning dependencies of target iciclespy_msg__rosidl_typesupport_introspection_cpp[0m
+[1.270s] [ 18%] [32mBuilding CXX object CMakeFiles/iciclespy_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/iciclespy_msg/msg/image_msg_request__type_support.cpp.o[0m
+[1.271s] [ 21%] [32mBuilding CXX object CMakeFiles/iciclespy_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/iciclespy_msg/srv/image_msg_request__type_support.cpp.o[0m
+[1.311s] [35m[1mScanning dependencies of target iciclespy_msg__rosidl_typesupport_fastrtps_cpp[0m
+[1.316s] In file included from [01m[K/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg/rosidl_typesupport_introspection_cpp/iciclespy_msg/msg/image_msg_request__type_support.cpp:12:0[m[K:
+[1.316s] [01m[K/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg/rosidl_generator_cpp/iciclespy_msg/msg/image_msg_request__struct.hpp:19:10:[m[K [01;31m[Kfatal error: [m[Kiciclespy_msg/msg/image__struct.hpp: No such file or directory
+[1.316s]  #include [01;31m[K"iciclespy_msg/msg/image__struct.hpp"[m[K
+[1.316s]           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.316s] compilation terminated.
+[1.317s] In file included from [01m[K/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg/rosidl_typesupport_introspection_cpp/iciclespy_msg/srv/image_msg_request__type_support.cpp:12:0[m[K:
+[1.317s] [01m[K/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg/rosidl_generator_cpp/iciclespy_msg/srv/image_msg_request__struct.hpp:133:10:[m[K [01;31m[Kfatal error: [m[Kiciclespy_msg/msg/image__struct.hpp: No such file or directory
+[1.317s]  #include [01;31m[K"iciclespy_msg/msg/image__struct.hpp"[m[K
+[1.317s]           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.317s] compilation terminated.
+[1.317s] CMakeFiles/iciclespy_msg__rosidl_typesupport_introspection_cpp.dir/build.make:116: recipe for target 'CMakeFiles/iciclespy_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/iciclespy_msg/srv/image_msg_request__type_support.cpp.o' failed
+[1.318s] CMakeFiles/iciclespy_msg__rosidl_typesupport_introspection_cpp.dir/build.make:103: recipe for target 'CMakeFiles/iciclespy_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/iciclespy_msg/msg/image_msg_request__type_support.cpp.o' failed
+[1.318s] make[2]: *** [CMakeFiles/iciclespy_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/iciclespy_msg/srv/image_msg_request__type_support.cpp.o] Error 1
+[1.318s] make[2]: *** Waiting for unfinished jobs....
+[1.318s] make[2]: *** [CMakeFiles/iciclespy_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/iciclespy_msg/msg/image_msg_request__type_support.cpp.o] Error 1
+[1.318s] make[1]: *** [CMakeFiles/iciclespy_msg__rosidl_typesupport_introspection_cpp.dir/all] Error 2
+[1.318s] CMakeFiles/Makefile2:457: recipe for target 'CMakeFiles/iciclespy_msg__rosidl_typesupport_introspection_cpp.dir/all' failed
+[1.319s] [ 27%] [32mBuilding CXX object CMakeFiles/iciclespy_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/iciclespy_msg/srv/dds_fastrtps/image_msg_request__type_support.cpp.o[0m
+[1.319s] [ 27%] [32mBuilding CXX object CMakeFiles/iciclespy_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/iciclespy_msg/msg/dds_fastrtps/image_msg_request__type_support.cpp.o[0m
+[1.354s] In file included from [01m[K/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg/rosidl_typesupport_fastrtps_cpp/iciclespy_msg/msg/image_msg_request__rosidl_typesupport_fastrtps_cpp.hpp:11:0[m[K,
+[1.354s]                  from [01m[K/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg/rosidl_typesupport_fastrtps_cpp/iciclespy_msg/msg/dds_fastrtps/image_msg_request__type_support.cpp:4[m[K:
+[1.354s] [01m[K/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg/rosidl_generator_cpp/iciclespy_msg/msg/image_msg_request__struct.hpp:19:10:[m[K [01;31m[Kfatal error: [m[Kiciclespy_msg/msg/image__struct.hpp: No such file or directory
+[1.354s]  #include [01;31m[K"iciclespy_msg/msg/image__struct.hpp"[m[K
+[1.354s]           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.354s] compilation terminated.
+[1.354s] In file included from [01m[K/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg/rosidl_typesupport_fastrtps_cpp/iciclespy_msg/srv/image_msg_request__rosidl_typesupport_fastrtps_cpp.hpp:11:0[m[K,
+[1.355s]                  from [01m[K/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg/rosidl_typesupport_fastrtps_cpp/iciclespy_msg/srv/dds_fastrtps/image_msg_request__type_support.cpp:4[m[K:
+[1.355s] [01m[K/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg/rosidl_generator_cpp/iciclespy_msg/srv/image_msg_request__struct.hpp:133:10:[m[K [01;31m[Kfatal error: [m[Kiciclespy_msg/msg/image__struct.hpp: No such file or directory
+[1.355s]  #include [01;31m[K"iciclespy_msg/msg/image__struct.hpp"[m[K
+[1.355s]           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.355s] compilation terminated.
+[1.355s] CMakeFiles/iciclespy_msg__rosidl_typesupport_fastrtps_cpp.dir/build.make:103: recipe for target 'CMakeFiles/iciclespy_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/iciclespy_msg/msg/dds_fastrtps/image_msg_request__type_support.cpp.o' failed
+[1.355s] make[2]: *** [CMakeFiles/iciclespy_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/iciclespy_msg/msg/dds_fastrtps/image_msg_request__type_support.cpp.o] Error 1
+[1.355s] make[2]: *** Waiting for unfinished jobs....
+[1.355s] make[2]: *** [CMakeFiles/iciclespy_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/iciclespy_msg/srv/dds_fastrtps/image_msg_request__type_support.cpp.o] Error 1
+[1.355s] make[1]: *** [CMakeFiles/iciclespy_msg__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2
+[1.356s] CMakeFiles/iciclespy_msg__rosidl_typesupport_fastrtps_cpp.dir/build.make:116: recipe for target 'CMakeFiles/iciclespy_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/iciclespy_msg/srv/dds_fastrtps/image_msg_request__type_support.cpp.o' failed
+[1.356s] CMakeFiles/Makefile2:314: recipe for target 'CMakeFiles/iciclespy_msg__rosidl_typesupport_fastrtps_cpp.dir/all' failed
+[1.356s] Makefile:159: recipe for target 'all' failed
+[1.356s] make: *** [all] Error 2
+[1.357s] Invoked command in '/home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg' returned '2': CMAKE_PREFIX_PATH=/opt/ros/eloquent /usr/local/bin/cmake --build /home/oleg/Documents/Github/IcicleSpy3/device/build/iciclespy_msg -- -j8 -l8
