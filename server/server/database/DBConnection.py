@@ -31,8 +31,10 @@ class DBConnection(DBConnectionEngine, Queries):
             self.reconnect()
 
         if self.db.is_connected():
-            query = self.SAVE_DATA
-            self.execute(self.db, query, [temp, hum, count], set=True)
+            query = self.TEST
+            print(self.execute(self.db, query))
+            # query = self.SAVE_DATA
+            # self.execute(self.db, query, [temp, hum, count], set=True)
             return True
         else:
             return False
@@ -40,6 +42,6 @@ class DBConnection(DBConnectionEngine, Queries):
 
 if __name__ == '__main__':
     import time
-    db = DBConnection('localhost', 3306, 'oleg', '321', 'test')
+    db = DBConnection('localhost', 3306, 'oleg', '321', 'IcicleSpy3')
     # time.sleep(10)
     db.save_data(2.567, 2, 2)
