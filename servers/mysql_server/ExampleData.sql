@@ -73,3 +73,11 @@ INSERT INTO `IcicleSpy3`.`cameras` (`token`, `addresses_id`, `devices_id`) VALUE
 INSERT INTO `IcicleSpy3`.`cameras` (`token`, `addresses_id`, `devices_id`) VALUES ('CAM16', '6', '12');
 INSERT INTO `IcicleSpy3`.`cameras` (`token`, `addresses_id`, `devices_id`) VALUES ('CAM17', '7', '12');
 
+
+-- Add users
+-- password: qwerty
+INSERT INTO `IcicleSpy3`.`users` (`login`, `password`, `first_name`, `last_name`, `company`) VALUES ('test1@mail.ru', 'd8578edf8458ce06fbc5bb76a58c5ca4', 'FN1', 'LN1', 'C1');
+-- password: QWERTY
+INSERT INTO `IcicleSpy3`.`users` (`login`, `password`, `first_name`, `last_name`, `company`) VALUES ('test2@mail.ru', 'c3981fa8d26e95d911fe8eaeb6570f2f', 'FN2', 'LN2', 'C2');
+-- password: icicle
+INSERT INTO `IcicleSpy3`.`users` (`login`, `password`, `first_name`, `last_name`, `company`) VALUES ('test3@mail.ru', '390b9d5a0b69278a88df6b20792532b5', 'FN3', 'LN3', 'C3');
