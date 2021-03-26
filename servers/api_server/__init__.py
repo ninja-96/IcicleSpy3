@@ -23,5 +23,5 @@ def get_pw(username):
     return None
 
 
-from server.server import receive_handler
-from server.server import tasks
+from server.api_server import receive_handler
+from server.api_server import tasks
