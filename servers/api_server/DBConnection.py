@@ -15,7 +15,7 @@ class DBConnection(DBConnectionEngine):
 
         self.__db = MySQLConnection()
         self.__devices_data_fields = ['id', 'time', 'temperature', 'air_humidity', 'count', 'bbox', 'img', 'device_id', 'camera_id']
-        self.__users_data_fields = ['id', 'time', 'count', 'bbox', 'img', 'coorinates', 'device_id', 'camera_id']
+        self.__users_data_fields = ['id', 'time', 'count', 'bbox', 'img', 'coorinates']
 
         self.__connect(host, port, user, password)
 
@@ -55,7 +55,7 @@ class DBConnection(DBConnectionEngine):
             self.__reconnect()
 
         if self.__db.is_connected():
-            query = Queries.DEVICE_RECORD_ID
+            query = Queries.DEVICE_RECORD_ID_EXISTS
             result = self.execute(self.__db,
                                   query,
                                   [data.device_id,
@@ -76,7 +76,6 @@ class DBConnection(DBConnectionEngine):
                              set=True)
                 return True
             elif len(result) == 1:
-                idx = result[0][0]
                 query = Queries.UPDATE_DEVICE_RECORD
                 self.execute(self.__db,
                              query,
@@ -86,7 +85,6 @@ class DBConnection(DBConnectionEngine):
                               data.count,
                               data.bbox,
                               data.img,
-                              idx,
                               data.device_id,
                               data.camera_id],
                              set=True)
@@ -108,44 +106,29 @@ class DBConnection(DBConnectionEngine):
                           data.bbox,
                           data.latitude,
                           data.longitude,
-                          data.device_id,
-                          data.camera_id],
+                          data.users_id],
                          set=True)
             return True
         else:
             return False
 
+    def get_data_by_id(self, id: int, request: list):
+        for r in request:
+            if r not in self.__devices_data_fields and self.sql_check(r):
+                return []
 
-if __name__ == '__main__':
-    login = 'test@mail.ru'
-    password = 'icicle'
+        query = Queries.DEVICE_RECORD_ID_BY_ID
+        query = query % (', '.join(request), '%s')
 
-    db = DBConnection('localhost', 3306, 'iciclespy3_server', 'is_server3_password')
-    auth = db.auth_check(login, password)
-    print(f'Data correct : {auth}')
+        data = self.execute(self.__db,
+                            query,
+                            [id])
 
-    # isp = IcicleSpyPackage()
-    # isp.time = '2020-02-20 12:12:12'
-    # isp.temperature = -22
-    # isp.air_humidity = 53
-    # isp.count = 1
-    # isp.bbox = '[]'
-    # isp.img = bytes([3])
-    # isp.camera_id = 1
-    # isp.device_id = 1
-    #
-    # db = DBConnection('localhost', 3306, 'iciclespy3_server', 'is_server3_password', 'IcicleSpy3')
-    # db.save_device_package(isp)
+        return_data = []
+        for d in data:
+            tmp = {}
+            for r, dd in zip(request, d):
+                tmp[r] = dd
+            return_data.append(tmp)
 
-    # ispm = IcicleSpyPackageMobile()
-    # ispm.time = '2020-02-20 12:12:12'
-    # ispm.count = 1
-    # ispm.bbox = '[]'
-    # ispm.img = bytes([0])
-    # ispm.latitude = 0.0
-    # ispm.longitude = 0.0
-    # ispm.camera_id = 1
-    # ispm.device_id = 2
-    #
-    # db = DBConnection('localhost', 3306, 'iciclespy3_server', 'is_server3_password', 'IcicleSpy3')
-    # db.save_mobile_package(ispm)
+        return return_data
