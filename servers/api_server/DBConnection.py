@@ -34,7 +34,8 @@ class DBConnection(DBConnectionEngine):
     def save_device_package(self, data: IcicleSpyPackage):
         if not self.db.is_connected():
             self.__reconnect()
-        else:
+
+        if self.db.is_connected():
             query = Queries.SAVE_DEVICE_PACKAGE
             self.execute(self.db,
                          query,
@@ -48,14 +49,53 @@ class DBConnection(DBConnectionEngine):
                          set=True)
 
             return True
+        else:
+            return False
 
     def save_mobile_package(self, data: IcicleSpyPackageMobile):
-        pass
+        if not self.db.is_connected():
+            self.__reconnect()
+
+        if self.db.is_connected():
+            query = Queries.SAVE_MOBILE_PACKAGE
+            self.execute(self.db,
+                         query,
+                         [data.time,
+                          data.count,
+                          data.bbox,
+                          data.latitude,
+                          data.longitude,
+                          data.device_id,
+                          data.camera_id],
+                         set=True)
+            return True
+        else:
+            return False
 
 
 if __name__ == '__main__':
-    isp = IcicleSpyPackage()
-    isp.time = '2020-02-20 12:12:12'
+    # isp = IcicleSpyPackage()
+    # isp.time = '2020-02-20 12:12:12'
+    # isp.temperature = -22
+    # isp.air_humidity = 53
+    # isp.count = 1
+    # isp.bbox = '[]'
+    # isp.img = bytes([0])
+    # isp.camera_id = 1
+    # isp.device_id = 1
+    #
+    # db = DBConnection('localhost', 3306, 'iciclespy3_server', 'is_server3_password', 'IcicleSpy3')
+    # db.save_device_package(isp)
+
+    ispm = IcicleSpyPackageMobile()
+    ispm.time = '2020-02-20 12:12:12'
+    ispm.count = 1
+    ispm.bbox = '[]'
+    ispm.img = bytes([0])
+    ispm.latitude = 0.0
+    ispm.longitude = 0.0
+    ispm.camera_id = 1
+    ispm.device_id = 2
 
     db = DBConnection('localhost', 3306, 'iciclespy3_server', 'is_server3_password', 'IcicleSpy3')
-    db.save_device_package(isp)
+    db.save_mobile_package(ispm)
