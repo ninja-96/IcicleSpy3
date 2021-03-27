@@ -10,69 +10,98 @@ from Queries import Queries
 
 
 class DBConnection(DBConnectionEngine):
-    def __init__(self, host, port, user, password, database):
+    def __init__(self, host, port, user, password):
         super().__init__()
 
-        self.db = MySQLConnection()
-        self.__connect(host, port, user, password, database)
+        self.__db = MySQLConnection()
+        self.__devices_data_fields = ['id', 'time', 'temperature', 'air_humidity', 'count', 'bbox', 'img', 'device_id', 'camera_id']
+        self.__users_data_fields = ['id', 'time', 'count', 'bbox', 'img', 'coorinates', 'device_id', 'camera_id']
 
-    def __connect(self, host, port, user, password, database):
+        self.__connect(host, port, user, password)
+
+    def __connect(self, host, port, user, password):
         try:
-            self.db.connect(host=host, port=port, user=user, passwd=password, database=database)
+            self.__db.connect(host=host, port=port, user=user, passwd=password)
             return True
         except sql.errors.InterfaceError:
             return False
 
     def __reconnect(self):
         try:
-            self.db.reconnect()
+            self.__db.reconnect()
             return True
         except sql.errors.InterfaceError:
             return False
 
     def auth_check(self, login, password):
-        if not self.db.is_connected():
+        if not self.__db.is_connected():
             self.__reconnect()
 
-        if self.db.is_connected():
-            query = Queries.AUTH_CHECK
-            answer = self.execute(self.db,
-                                  query,
-                                  [self.sql_check(login),
-                                   hashlib.md5(bytes(password, 'utf-8')).hexdigest()])[0][0]
-
-            return bool(answer)
+        if self.__db.is_connected():
+            if self.sql_check(login):
+                query = Queries.AUTH_CHECK
+                answer = self.execute(self.__db,
+                                      query,
+                                      [login,
+                                       hashlib.md5(bytes(password, 'utf-8')).hexdigest()])[0][0]
+                return bool(answer)
+            else:
+                return False
         else:
             return False
 
     def save_device_package(self, data: IcicleSpyPackage):
-        if not self.db.is_connected():
+        if not self.__db.is_connected():
             self.__reconnect()
 
-        if self.db.is_connected():
-            query = Queries.SAVE_DEVICE_PACKAGE
-            self.execute(self.db,
-                         query,
-                         [data.time,
-                          data.temperature,
-                          data.air_humidity,
-                          data.count,
-                          data.bbox,
-                          data.device_id,
-                          data.camera_id],
-                         set=True)
+        if self.__db.is_connected():
+            query = Queries.DEVICE_RECORD_ID
+            result = self.execute(self.__db,
+                                  query,
+                                  [data.device_id,
+                                   data.camera_id])
 
-            return True
+            if len(result) == 0:
+                query = Queries.SAVE_DEVICE_PACKAGE
+                self.execute(self.__db,
+                             query,
+                             [data.time,
+                              data.temperature,
+                              data.air_humidity,
+                              data.count,
+                              data.bbox,
+                              data.img,
+                              data.device_id,
+                              data.camera_id],
+                             set=True)
+                return True
+            elif len(result) == 1:
+                idx = result[0][0]
+                query = Queries.UPDATE_DEVICE_RECORD
+                self.execute(self.__db,
+                             query,
+                             [data.time,
+                              data.temperature,
+                              data.air_humidity,
+                              data.count,
+                              data.bbox,
+                              data.img,
+                              idx,
+                              data.device_id,
+                              data.camera_id],
+                             set=True)
+            else:
+                return False
         else:
             return False
 
     def save_mobile_package(self, data: IcicleSpyPackageMobile):
-        if not self.db.is_connected():
+        if not self.__db.is_connected():
             self.__reconnect()
 
-        if self.db.is_connected():
+        if self.__db.is_connected():
             query = Queries.SAVE_MOBILE_PACKAGE
-            self.execute(self.db,
+            self.execute(self.__db,
                          query,
                          [data.time,
                           data.count,
@@ -91,7 +120,7 @@ if __name__ == '__main__':
     login = 'test@mail.ru'
     password = 'icicle'
 
-    db = DBConnection('localhost', 3306, 'iciclespy3_server', 'is_server3_password', 'IcicleSpy3')
+    db = DBConnection('localhost', 3306, 'iciclespy3_server', 'is_server3_password')
     auth = db.auth_check(login, password)
     print(f'Data correct : {auth}')
 
@@ -101,7 +130,7 @@ if __name__ == '__main__':
     # isp.air_humidity = 53
     # isp.count = 1
     # isp.bbox = '[]'
-    # isp.img = bytes([0])
+    # isp.img = bytes([3])
     # isp.camera_id = 1
     # isp.device_id = 1
     #
