@@ -75,6 +75,7 @@ INSERT INTO `IcicleSpy3`.`cameras` (`token`, `addresses_id`, `devices_id`) VALUE
 
 
 -- Add users
+-- password: md5
 -- password: qwerty
 INSERT INTO `IcicleSpy3`.`users` (`login`, `password`, `first_name`, `last_name`, `company`) VALUES ('FrederickLMedina@armyspy.com ', 'd8578edf8458ce06fbc5bb76a58c5ca4', 'Frederick', 'Medina', 'Intel');
 -- password: QWERTY
