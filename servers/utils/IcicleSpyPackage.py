@@ -25,7 +25,6 @@ class IcicleSpyPackage:
 
 class IcicleSpyPackageMobile:
     def __init__(self,
-                 timestamp: datetime = None,
                  time: datetime = None,
                  count: int = None,
                  bbox: list = None,
@@ -35,7 +34,6 @@ class IcicleSpyPackageMobile:
                  device_id: int = None,
                  camera_id: int = None):
 
-        self.timestamp = timestamp
         self.time = time
         self.count = count
         self.bbox = bbox
