@@ -38,7 +38,7 @@ class DBConnection(DBConnectionEngine):
             query = Queries.AUTH_CHECK
             answer = self.execute(self.db,
                                   query,
-                                  [login,
+                                  [self.sql_check(login),
                                    hashlib.md5(bytes(password, 'utf-8')).hexdigest()])[0][0]
 
             return bool(answer)
