@@ -1,3 +1,5 @@
+import hashlib
+
 import mysql.connector as sql
 from mysql.connector import MySQLConnection
 
@@ -28,8 +30,20 @@ class DBConnection(DBConnectionEngine):
         except sql.errors.InterfaceError:
             return False
 
-    def auth_check(self, username, password):
-        pass
+    def auth_check(self, login, password):
+        if not self.db.is_connected():
+            self.__reconnect()
+
+        if self.db.is_connected():
+            query = Queries.AUTH_CHECK
+            answer = self.execute(self.db,
+                                  query,
+                                  [login,
+                                   hashlib.md5(bytes(password, 'utf-8')).hexdigest()])[0][0]
+
+            return bool(answer)
+        else:
+            return False
 
     def save_device_package(self, data: IcicleSpyPackage):
         if not self.db.is_connected():
@@ -74,6 +88,13 @@ class DBConnection(DBConnectionEngine):
 
 
 if __name__ == '__main__':
+    login = 'test@mail.ru'
+    password = 'icicle'
+
+    db = DBConnection('localhost', 3306, 'iciclespy3_server', 'is_server3_password', 'IcicleSpy3')
+    auth = db.auth_check(login, password)
+    print(f'Data correct : {auth}')
+
     # isp = IcicleSpyPackage()
     # isp.time = '2020-02-20 12:12:12'
     # isp.temperature = -22
@@ -87,15 +108,15 @@ if __name__ == '__main__':
     # db = DBConnection('localhost', 3306, 'iciclespy3_server', 'is_server3_password', 'IcicleSpy3')
     # db.save_device_package(isp)
 
-    ispm = IcicleSpyPackageMobile()
-    ispm.time = '2020-02-20 12:12:12'
-    ispm.count = 1
-    ispm.bbox = '[]'
-    ispm.img = bytes([0])
-    ispm.latitude = 0.0
-    ispm.longitude = 0.0
-    ispm.camera_id = 1
-    ispm.device_id = 2
-
-    db = DBConnection('localhost', 3306, 'iciclespy3_server', 'is_server3_password', 'IcicleSpy3')
-    db.save_mobile_package(ispm)
+    # ispm = IcicleSpyPackageMobile()
+    # ispm.time = '2020-02-20 12:12:12'
+    # ispm.count = 1
+    # ispm.bbox = '[]'
+    # ispm.img = bytes([0])
+    # ispm.latitude = 0.0
+    # ispm.longitude = 0.0
+    # ispm.camera_id = 1
+    # ispm.device_id = 2
+    #
+    # db = DBConnection('localhost', 3306, 'iciclespy3_server', 'is_server3_password', 'IcicleSpy3')
+    # db.save_mobile_package(ispm)
