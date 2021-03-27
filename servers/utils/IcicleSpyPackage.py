@@ -31,8 +31,7 @@ class IcicleSpyPackageMobile:
                  img: Union[bytes, bytearray] = None,
                  latitude: float = None,
                  longitude: float = None,
-                 device_id: int = None,
-                 camera_id: int = None):
+                 users_id: int = None):
 
         self.time = time
         self.count = count
@@ -40,5 +39,4 @@ class IcicleSpyPackageMobile:
         self.img = img
         self.latitude = latitude
         self.longitude = longitude
-        self.device_id = device_id
-        self.camera_id = camera_id
+        self.users_id = users_id
