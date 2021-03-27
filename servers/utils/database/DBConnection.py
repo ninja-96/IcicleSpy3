@@ -3,10 +3,9 @@ import hashlib
 import mysql.connector as sql
 from mysql.connector import MySQLConnection
 
-from servers.utils.DBConnectionEngine import DBConnectionEngine
-
-from servers.utils.IcicleSpyPackage import IcicleSpyPackage, IcicleSpyPackageMobile
-from Queries import Queries
+from .DBConnectionEngine import DBConnectionEngine
+from ..IcicleSpyPackage import IcicleSpyPackage, IcicleSpyPackageMobile
+from .Queries import Queries
 
 
 class DBConnection(DBConnectionEngine):
