@@ -12,6 +12,8 @@ class RTSPCap:
                  width: Optional[int] = None,
                  height: Optional[int] = None):
 
+        self.__source = source
+
         if raw_source:
             self.__cap = cv2.VideoCapture(source)
         else:
@@ -37,6 +39,10 @@ class RTSPCap:
             ret, frame = self.__cap.read()
             if ret:
                 self.__frame = frame
+
+    @property
+    def source(self):
+        return self.__source
 
 
 if __name__ == '__main__':
