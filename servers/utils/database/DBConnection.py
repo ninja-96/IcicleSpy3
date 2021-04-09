@@ -4,7 +4,7 @@ import mysql.connector as sql
 from mysql.connector import MySQLConnection
 
 from .DBConnectionEngine import DBConnectionEngine
-from ..IcicleSpyPackage import IcicleSpyPackage, IcicleSpyPackageMobile
+from classes.IcicleSpyPackage import IcicleSpyPackage, IcicleSpyPackageMobile
 from .Queries import Queries
 
 

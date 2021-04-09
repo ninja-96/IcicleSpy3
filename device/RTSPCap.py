@@ -16,9 +16,8 @@ class RTSPCap:
             self.__cap = cv2.VideoCapture(source)
         else:
             raise Exception('Support only raw source')
-            # self.__cap = cv2.VideoCapture()
 
-        self.__frame = np.zeros((480, 640, 3), dtype=np.uint8)
+        self.__frame = np.zeros((10, 10, 3), dtype=np.uint8)
         self.__running = False
         self.__thread = threading.Thread(target=self.__read)
 

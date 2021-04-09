@@ -1,0 +1,13 @@
+{
+  "device_id": "device_id",
+  "cameras": [
+    {
+      "camera_id": "camera_id1",
+      "source": "source1"
+    },
+    {
+      "camera_id": "camera_id1",
+      "source": "source1"
+    }
+  ]
+}
