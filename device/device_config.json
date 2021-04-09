@@ -1,13 +1,10 @@
 {
   "device_id": "device_id",
+  "d_time": 30,
   "cameras": [
     {
       "camera_id": "camera_id1",
-      "source": "source1"
-    },
-    {
-      "camera_id": "camera_id1",
-      "source": "source1"
+      "source": 0
     }
   ]
 }
