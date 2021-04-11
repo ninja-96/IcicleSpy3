@@ -17,8 +17,10 @@ class RTSPCap:
         if raw_source:
             self.__cap = cv2.VideoCapture(source)
         else:
-            raise Exception('Support only raw source')
+            pipeline = f'rtspsrc location={source} ! queue ! rtph264depay ! h264parse ! avdec_h264 ! appsink'
+            self.__cap = cv2.VideoCapture(pipeline)
 
+        self.__cap.read()
         self.__frame = np.zeros((10, 10, 3), dtype=np.uint8)
         self.__running = False
         self.__thread = threading.Thread(target=self.__read)
@@ -46,7 +48,7 @@ class RTSPCap:
 
 
 if __name__ == '__main__':
-    cap = RTSPCap(0, raw_source=True)
+    cap = RTSPCap('rtsp://127.0.0.1:8554/', raw_source=True)
     cap.start()
 
     while True:
