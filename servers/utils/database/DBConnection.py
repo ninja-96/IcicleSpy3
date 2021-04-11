@@ -32,17 +32,33 @@ class DBConnection(DBConnectionEngine):
         except sql.errors.InterfaceError:
             return False
 
-    def auth_check(self, login, password):
+    def user_auth_check(self, login, password):
         if not self.__db.is_connected():
             self.__reconnect()
 
         if self.__db.is_connected():
             if self.sql_check(login):
-                query = Queries.AUTH_CHECK
+                query = Queries.USER_AUTH_CHECK
                 answer = self.execute(self.__db,
                                       query,
                                       [login,
                                        hashlib.md5(bytes(password, 'utf-8')).hexdigest()])[0][0]
+                return bool(answer)
+            else:
+                return False
+        else:
+            return False
+
+    def device_auth_check(self, device_id):
+        if not self.__db.is_connected():
+            self.__reconnect()
+
+        if self.__db.is_connected():
+            if self.sql_check(device_id):
+                query = Queries.DEVICE_AUTH_CHECK
+                answer = self.execute(self.__db,
+                                      query,
+                                      [device_id])[0][0]
                 return bool(answer)
             else:
                 return False
