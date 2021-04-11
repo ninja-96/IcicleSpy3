@@ -1,9 +1,10 @@
 import json
+import pickle
 import argparse
 
 import uvicorn
 
-from fastapi import Depends, FastAPI, HTTPException, status, Header
+from fastapi import Depends, FastAPI, HTTPException, status, Header, File
 from fastapi.security import HTTPBasic, HTTPBasicCredentials
 
 from utils.database.DBConnection import DBConnection
@@ -21,6 +22,7 @@ if __name__ == '__main__':
     app = FastAPI()
     security = HTTPBasic()
     db = DBConnection(cfg['mysql']['host'], cfg['mysql']['port'], cfg['mysql']['user'], cfg['mysql']['password'])
+
 
     def http_auth(credentials: HTTPBasicCredentials = Depends(security)):
         if not (db.auth_check(credentials.username, credentials.password)):
@@ -41,6 +43,13 @@ if __name__ == '__main__':
             return {'status': True, 'data': data}
         else:
             return {'status': False, 'data': []}
+
+
+    @app.post("/save_data_from_device/{device_id}")
+    def create_upload_file(device_id: str, file: bytes = File(...)):
+        print(device_id)
+        print(pickle.loads(file))
+        return {"filename": 'ok'}
 
 
     uvicorn.run(app, port=args.port)
