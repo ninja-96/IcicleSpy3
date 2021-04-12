@@ -1,16 +1,20 @@
+from typing import Union, Set
+from mysql.connector import MySQLConnection
+
+
 class DBConnectionEngine:
     __LOCK = ('\'', '\"', '<', '>', '=', '--', '?', '-', 'or', 'and', 'not', 'drop', 'table', 'database',
             'group', 'by', 'inner', 'join', 'left', 'right', 'union', 'distinct', 'insert', 'delete', 'values')
 
     __LOCK_SUBSTRING = ('\'', '\"', '<', '>', '=', '--', '?')  # , '-'
 
-    def __substring_check(self, s):
+    def __substring_check(self, s: str) -> bool:
         for ls in self.__LOCK_SUBSTRING:
             if s.find(ls) != -1:
                 return False
         return True
 
-    def sql_check(self, val):
+    def sql_check(self, val: Union[int, float, list, set]) -> bool:
         if type(val) in [int, float, list, set]:
             return True
         elif type(val) in [str]:
@@ -29,7 +33,7 @@ class DBConnectionEngine:
         else:
             return False
 
-    def execute(self, db, query, params=None, set=False):
+    def execute(self, db: MySQLConnection, query: str, params: list = None, set: bool = False) -> Union[list, None]:
         db.commit()
 
         cursor = db.cursor()
