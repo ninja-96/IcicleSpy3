@@ -3,12 +3,12 @@ import hashlib
 import mysql.connector as sql
 from mysql.connector import MySQLConnection
 
-from .DBConnectionEngine import DBConnectionEngine
+from .DBConnectionBase import DBConnectionBase
 from classes.IcicleSpyPackage import IcicleSpyPackage, IcicleSpyPackageMobile
 from .Queries import Queries
 
 
-class DBConnection(DBConnectionEngine):
+class DBConnection(DBConnectionBase):
     def __init__(self, host: str, port: int, user: str, password: str):
         super().__init__()
 

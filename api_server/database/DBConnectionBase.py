@@ -1,8 +1,8 @@
-from typing import Union, Set
+from typing import Union
 from mysql.connector import MySQLConnection
 
 
-class DBConnectionEngine:
+class DBConnectionBase:
     __LOCK = ('\'', '\"', '<', '>', '=', '--', '?', '-', 'or', 'and', 'not', 'drop', 'table', 'database',
             'group', 'by', 'inner', 'join', 'left', 'right', 'union', 'distinct', 'insert', 'delete', 'values')
 
@@ -47,10 +47,3 @@ class DBConnectionEngine:
         else:
             db.commit()
             return
-
-
-if __name__ == '__main__':
-    e = DBConnectionEngine()
-    # x = 'test test        test'
-    x = 2.452
-    print(e.sql_check(x))
