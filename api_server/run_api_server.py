@@ -72,7 +72,7 @@ if __name__ == '__main__':
         count = db.get_icicle_count_by_token(token)
         return {'status': True, 'count': count}
 
-    @app.get("/save_data_from_device")
+    @app.post("/save_data_from_device")
     def save_data_from_device(_=Depends(device_http_auth), data: bytes = File(...)):
         isp = pickle.loads(data)
 
