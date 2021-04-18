@@ -22,8 +22,11 @@ class RTSPCap:
             pipeline = f'rtspsrc location={source} ! queue ! rtph264depay ! h264parse ! avdec_h264 ! appsink'
             self.__cap = cv2.VideoCapture(pipeline)
 
-        self.__cap.read()
-        self.__frame = np.zeros((10, 10, 3), dtype=np.uint8)
+        ret, frame = self.__cap.read()
+        if ret:
+            self.__frame = frame
+        else:
+            self.__frame = np.zeros((10, 10, 3), dtype=np.uint8)
         self.__running = False
         self.__thread = threading.Thread(target=self.__read)
 
