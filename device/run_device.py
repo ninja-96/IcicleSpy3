@@ -1,9 +1,12 @@
 import json
+import pickle
 import argparse
-
 import time
 import random
 from datetime import datetime
+
+import requests
+from requests.auth import HTTPBasicAuth
 
 import cv2
 import numpy as np
@@ -23,7 +26,7 @@ if __name__ == '__main__':
 
     cameras = []
     for cam in cfg['cameras']:
-        cameras.append(RTSPCap(source=cam['source'], raw_source=True))
+        cameras.append(RTSPCap(source=cam['source'], token=cam['token'], raw_source=True))
     for cam in cameras:
         cam.start()
 
@@ -38,8 +41,15 @@ if __name__ == '__main__':
             isp.air_humidity = random.randint(0, 99) + random.random()
             isp.count = random.randint(0, 20)
             isp.bbox = []
-            isp.img = cv2.imencode('.jpg', frame)[1]
+            isp.img = cv2.imencode('.jpg', frame)[1].tobytes()
             isp.device_token = cfg['token']
             isp.camera_token = cam.token
+
+            files = {'data': pickle.dumps(isp)}
+            r = requests.post(f'{cfg["server"]}/save_data_from_device',
+                              files=files,
+                              auth=HTTPBasicAuth(cfg['login'], cfg['password']))
+
+            print(r, r.text)
 
         time.sleep(60 * cfg['d_time'])
