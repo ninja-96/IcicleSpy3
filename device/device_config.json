@@ -1,9 +1,9 @@
 {
-  "device_id": "device_id",
+  "token": "DEV1",
   "d_time": 30,
   "cameras": [
     {
-      "camera_id": "camera_id1",
+      "token": "CAM1",
       "source": 0
     }
   ]
