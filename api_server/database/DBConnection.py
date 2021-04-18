@@ -3,9 +3,9 @@ import hashlib
 import mysql.connector as sql
 from mysql.connector import MySQLConnection
 
-from .DBConnectionBase import DBConnectionBase
+from api_server.database.DBConnectionBase import DBConnectionBase
 from classes.IcicleSpyPackage import IcicleSpyPackage, IcicleSpyPackageMobile
-from .Queries import Queries
+from api_server.database.Queries import Queries
 
 
 class DBConnection(DBConnectionBase):
@@ -110,7 +110,7 @@ class DBConnection(DBConnectionBase):
                               data.temperature,
                               data.air_humidity,
                               data.count,
-                              data.bbox,
+                              str(data.bbox),
                               data.img,
                               device_id,
                               camera_id],
@@ -154,20 +154,20 @@ class DBConnection(DBConnectionBase):
     #     else:
     #         return False
 
-    def get_icicle_count_by_token(self, token: str) -> int:
+    def get_icicle_count_by_token(self, token: str) -> [int, int, int]:
         if not self.__db.is_connected():
             self.__reconnect()
 
         if self.__db.is_connected():
             query: str = Queries.GET_ICICLE_COUNT_BY_TOKEN
 
-            data = self.execute(self.__db,
-                                query,
-                                [token])[0][0]
+            min_count, max_count, avg = self.execute(self.__db,
+                                                     query,
+                                                     [token])[0]
 
-            return int(data)
+            return int(min_count), int(max_count), int(avg)
         else:
-            return -1
+            return -1, -1, -1
 
     def get_data_by_id(self, id: int, request: list) -> list:
         if not self.__db.is_connected():
@@ -195,3 +195,14 @@ class DBConnection(DBConnectionBase):
             return return_data
         else:
             return []
+
+
+if __name__ == '__main__':
+    import json
+    cfg = json.loads(open('../api_server_config.json').read())
+    db = DBConnection(cfg['mysql']['host'],
+                      cfg['mysql']['port'],
+                      cfg['mysql']['user'],
+                      cfg['mysql']['password'])
+
+    print(db.get_icicle_count_by_token('DEV3'))
