@@ -10,8 +10,8 @@ class IcicleSpyPackage:
                  count: int = None,
                  bbox: list = None,
                  img: Union[bytes, bytearray] = None,
-                 device_id: int = None,
-                 camera_id: int = None):
+                 device_token: str = None,
+                 camera_token: str = None):
 
         self.time = time
         self.temperature = temperature
@@ -19,24 +19,27 @@ class IcicleSpyPackage:
         self.count = count
         self.bbox = bbox
         self.img = img
-        self.device_id = device_id
-        self.camera_id = camera_id
+        self.device_token = device_token
+        self.camera_token = camera_token
 
 
 class IcicleSpyPackageMobile:
-    def __init__(self,
-                 time: datetime = None,
-                 count: int = None,
-                 bbox: list = None,
-                 img: Union[bytes, bytearray] = None,
-                 latitude: float = None,
-                 longitude: float = None,
-                 users_id: int = None):
+    pass
 
-        self.time = time
-        self.count = count
-        self.bbox = bbox
-        self.img = img
-        self.latitude = latitude
-        self.longitude = longitude
-        self.users_id = users_id
+# class IcicleSpyPackageMobile:
+#     def __init__(self,
+#                  time: datetime = None,
+#                  count: int = None,
+#                  bbox: list = None,
+#                  img: Union[bytes, bytearray] = None,
+#                  latitude: float = None,
+#                  longitude: float = None,
+#                  users_id: int = None):
+#
+#         self.time = time
+#         self.count = count
+#         self.bbox = bbox
+#         self.img = img
+#         self.latitude = latitude
+#         self.longitude = longitude
+#         self.users_id = users_id

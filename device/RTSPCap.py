@@ -8,11 +8,13 @@ import threading
 class RTSPCap:
     def __init__(self,
                  source: Union[str, int],
+                 token: str,
                  raw_source: bool = False,
                  width: Optional[int] = None,
                  height: Optional[int] = None):
 
         self.__source = source
+        self.__token = token
 
         if raw_source:
             self.__cap = cv2.VideoCapture(source)
@@ -43,8 +45,12 @@ class RTSPCap:
                 self.__frame = frame
 
     @property
-    def source(self):
+    def source(self) -> Union[str, int]:
         return self.__source
+
+    @property
+    def token(self) -> str:
+        return self.__token
 
 
 if __name__ == '__main__':
