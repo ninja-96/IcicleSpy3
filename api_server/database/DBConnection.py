@@ -124,7 +124,7 @@ class DBConnection(DBConnectionBase):
                               data.temperature,
                               data.air_humidity,
                               data.count,
-                              data.bbox,
+                              str(data.bbox),
                               data.img,
                               record_id[0][0],
                               device_id,
