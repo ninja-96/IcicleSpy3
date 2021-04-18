@@ -16,3 +16,5 @@ class Queries:
 
     DEVICE_RECORD_ID_BY_DIDX = "SELECT T.id FROM IcicleSpy3.devices_data as T WHERE T.devices_id = %s"
     DEVICE_RECORD_ID_BY_ID = "SELECT %s FROM IcicleSpy3.devices_data as T WHERE T.id = %s"
+
+    GET_ICICLE_COUNT_BY_TOKEN = "SELECT T.count FROM IcicleSpy3.devices_data as T WHERE T.devices_id = (SELECT S.id FROM IcicleSpy3.devices as S WHERE S.token = %s)"

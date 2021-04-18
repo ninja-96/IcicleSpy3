@@ -154,23 +154,44 @@ class DBConnection(DBConnectionBase):
     #     else:
     #         return False
 
+    def get_icicle_count_by_token(self, token: str) -> int:
+        if not self.__db.is_connected():
+            self.__reconnect()
+
+        if self.__db.is_connected():
+            query: str = Queries.GET_ICICLE_COUNT_BY_TOKEN
+
+            data = self.execute(self.__db,
+                                query,
+                                [token])[0][0]
+
+            return int(data)
+        else:
+            return -1
+
     def get_data_by_id(self, id: int, request: list) -> list:
-        for r in request:
-            if r not in self.__devices_data_fields and self.sql_check(r):
-                return []
+        if not self.__db.is_connected():
+            self.__reconnect()
 
-        query: str = Queries.DEVICE_RECORD_ID_BY_ID
-        query: str = query % (', '.join(request), '%s')
+        if self.__db.is_connected():
+            for r in request:
+                if r not in self.__devices_data_fields and self.sql_check(r):
+                    return []
 
-        data = self.execute(self.__db,
-                            query,
-                            [id])
+            query: str = Queries.DEVICE_RECORD_ID_BY_ID
+            query: str = query % (', '.join(request), '%s')
 
-        return_data = []
-        for d in data:
-            tmp = {}
-            for r, dd in zip(request, d):
-                tmp[r] = dd
-            return_data.append(tmp)
+            data = self.execute(self.__db,
+                                query,
+                                [id])
 
-        return return_data
+            return_data = []
+            for d in data:
+                tmp = {}
+                for r, dd in zip(request, d):
+                    tmp[r] = dd
+                return_data.append(tmp)
+
+            return return_data
+        else:
+            return []

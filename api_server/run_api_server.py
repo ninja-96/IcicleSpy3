@@ -61,10 +61,20 @@ if __name__ == '__main__':
         else:
             return {'status': False, 'data': []}
 
+    @app.get('/get_icicle_count')
+    def get_icicle_count(_=Depends(device_http_auth), token: str = Header(None)):
+        if not db.device_in_db(token):
+            raise HTTPException(
+                status_code=status.HTTP_403_FORBIDDEN,
+                detail="Forbidden"
+            )
 
-    @app.post("/save_data_from_device")
+        count = db.get_icicle_count_by_token(token)
+        return {'status': True, 'count': count}
+
+    @app.get("/save_data_from_device")
     def save_data_from_device(_=Depends(device_http_auth), data: bytes = File(...)):
-        isp: IcicleSpyPackage = pickle.loads(data)
+        isp = pickle.loads(data)
 
         if type(isp) == IcicleSpyPackage:
             if not (db.device_in_db(isp.device_token) and db.camera_in_db(isp.camera_token)):
