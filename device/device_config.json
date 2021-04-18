@@ -1,6 +1,9 @@
 {
   "token": "DEV1",
   "d_time": 30,
+  "server": "http://127.0.0.1:8000",
+  "login": "login",
+  "password": "password",
   "cameras": [
     {
       "token": "CAM1",
