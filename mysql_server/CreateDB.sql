@@ -153,7 +153,7 @@ DROP TABLE IF EXISTS `IcicleSpy3`.`images` ;
 CREATE TABLE IF NOT EXISTS `IcicleSpy3`.`images` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `timestamp` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
-  `img` LONGBLOB NULL DEFAULT NONE,
+  `img` LONGBLOB NULL DEFAULT NULL,
   `devices_id` INT NOT NULL,
   `cameras_id` INT NOT NULL,
   PRIMARY KEY (`id`, `devices_id`, `cameras_id`),
