@@ -71,6 +71,10 @@ if __name__ == '__main__':
         else:
             return {'status': False, 'data': []}
 
+    @app.get('/get_temp_timeseries')
+    def get_temp_timeseries(_=Depends(user_http_auth)):
+        pass
+
     @app.get('/get_icicle_count')
     def get_icicle_count(_=Depends(device_http_auth), token: str = Header(None)):
         if not mysql_db.device_in_db(token):
