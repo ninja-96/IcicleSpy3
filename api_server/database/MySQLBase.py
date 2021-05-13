@@ -2,7 +2,7 @@ from typing import Union
 from mysql.connector import MySQLConnection
 
 
-class DBConnectionBase:
+class MySQLBase:
     __LOCK = ('\'', '\"', '<', '>', '=', '--', '?', '-', 'or', 'and', 'not', 'drop', 'table', 'database',
             'group', 'by', 'inner', 'join', 'left', 'right', 'union', 'distinct', 'insert', 'delete', 'values')
 

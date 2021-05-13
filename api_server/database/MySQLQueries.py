@@ -1,4 +1,4 @@
-class Queries:
+class MySQLQueries:
     USER_AUTH_CHECK = "SELECT EXISTS(SELECT 1 FROM IcicleSpy3.users WHERE (IcicleSpy3.users.login = %s AND IcicleSpy3.users.password = %s))"
 
     DEVICE_IN_DB = "SELECT EXISTS(SELECT 1 FROM IcicleSpy3.devices AS T WHERE T.token = %s)"
@@ -18,3 +18,5 @@ class Queries:
     DEVICE_RECORD_ID_BY_ID = "SELECT %s FROM IcicleSpy3.devices_data as T WHERE T.id = %s"
 
     GET_ICICLE_COUNT_BY_TOKEN = "SELECT MIN(D.count), MAX(D.count), AVG(D.count) FROM IcicleSpy3.devices_data AS D WHERE D.cameras_id IN (SELECT T.id FROM IcicleSpy3.cameras as T WHERE T.addresses_id = (SELECT T.addresses_id FROM IcicleSpy3.devices as T WHERE T.token = %s))"
+
+    ADDRESS_INFO_BY_IDX = "SELECT A.country, A.region_state, A.city, A.street, A.building, A.index FROM IcicleSpy3.addresses AS A WHERE A.id = %s"

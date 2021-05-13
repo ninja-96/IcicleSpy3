@@ -7,7 +7,7 @@
   },
   "influx": {
     "url": "http://localhost:8086",
-    "token": "3NAjIQ3qefRqoqZEChHGvGARviSzgGcK2avb1eUtmJj6ubuo7vq_R3vXeJCDT7AkGN5XQXjHL0UDWzBFuIOmfQ==",
+    "token": "mB_Kr-Ak8SwqPByhbH25ozucJGE5DUAzOF1zLRLoJ39ndpBa-0NAaE6FWp7AHeY6323P2Gv2ESi28IycphHXZg==",
     "org": "iciclespy3",
     "bucket": "iciclespy3"
   },
