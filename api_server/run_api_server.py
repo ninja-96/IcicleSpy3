@@ -64,7 +64,7 @@ if __name__ == '__main__':
 
     @app.get("/get_data")
     def get_data(_=Depends(user_http_auth), id: int = Header(None), fields: str = Header(None)):
-        if id > 0 and fields != '':
+        if id > 0 and fields and not None and fields != '':
             fields: list = json.loads(fields)
             data = mysql_db.get_data_by_id(id, fields)
             return {'status': True, 'data': data}
@@ -72,8 +72,23 @@ if __name__ == '__main__':
             return {'status': False, 'data': []}
 
     @app.get('/get_temp_timeseries')
-    def get_temp_timeseries(_=Depends(user_http_auth)):
-        pass
+    def get_temp_timeseries(_=Depends(user_http_auth), fields: str = Header(None)):
+        if fields and not None:
+            fields: dict = json.loads(fields)
+            data = influx_db.get_temperature(fields)
+            return {'status': True, 'data': data}
+        else:
+            return {'status': False, 'data': []}
+
+
+    @app.get('/get_air_humidity_timeseries')
+    def get_air_humidity_timeseries(_=Depends(user_http_auth), fields: str = Header(None)):
+        if fields and not None:
+            fields: dict = json.loads(fields)
+            data = influx_db.get_air_humidity(fields)
+            return {'status': True, 'data': data}
+        else:
+            return {'status': False, 'data': []}
 
     @app.get('/get_icicle_count')
     def get_icicle_count(_=Depends(device_http_auth), token: str = Header(None)):
