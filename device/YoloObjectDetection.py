@@ -56,6 +56,15 @@ class YoloObjectDetection:
                 x_max = int(x + (w / 2))
                 y_max = int(y + (h / 2))
 
+                if x_min < 0:
+                    x_min = 0
+                if y_min < 0:
+                    y_min = 0
+                if x_max > width:
+                    x_max = width
+                if y_max > height:
+                    y_max = height
+
                 boxes.append([x_min, y_min, x_max, y_max])
                 classes.append(cls)
                 scores.append(float(score))
