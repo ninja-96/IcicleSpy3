@@ -62,14 +62,14 @@ class Influx:
             check &= key in self.__allowed_fields
 
         if check:
-            p: dict = {'_start': datetime.datetime.strptime(request['start'], "%d/%m/%Y %H:%M:%S"),
-                       '_end': datetime.datetime.strptime(request['end'], "%d/%m/%Y %H:%M:%S"),
+            p: dict = {'_start': datetime.datetime.strptime(request['start_time'], "%d/%m/%Y %H:%M:%S"),
+                       '_end': datetime.datetime.strptime(request['end_time'], "%d/%m/%Y %H:%M:%S"),
                        '_measurement': measurement}
 
-            del request['start']
-            del request['end']
+            del request['start_time']
+            del request['end_time']
 
-            query_tmp: str = f'from(bucket:"{self.__bucket}") |> range(start: _start, stop: _end) |> filter(fn: (r) => r._measurement == _measurement'
+            query_tmp: str = f'from(bucket:"{self.__bucket}") |> range(start: _start, stop: _end) |> filter(fn: (r) => r._measurement == \"air_humidity\"'
 
             for r_key in request.keys():
                 tmp = f"{r_key}"
@@ -77,6 +77,9 @@ class Influx:
 
                 query_tmp += f" and r.{tmp} == {tmp}"
             query_tmp += ')'
+
+            # print(query_tmp)
+            # print(p)
 
             return p, query_tmp
         else:
@@ -86,7 +89,7 @@ class Influx:
         params, query = self.__generate_query(request, 'temperature')
 
         if len(params.keys()):
-            tables = self.__query_api.query(query, params)
+            tables = self.__query_api.query(query, params=params)
 
             time_series = {'count': len(tables[0].records), 'records': []}
             for table in tables:
@@ -112,9 +115,13 @@ class Influx:
 
     def get_air_humidity(self, request: dict):
         params, query = self.__generate_query(request, 'air_humidity')
+        query = 'from(bucket:"iciclespy3") |> range(start: _start, stop: _end)'
+        params = {'_start': datetime.datetime(2019, 9, 18, 1, 55, 19), '_end': datetime.datetime(2021, 9, 18, 1, 55, 19)}
+        print(query)
+        print(params, type(params))
 
         if len(params.keys()):
-            tables = self.__query_api.query(query, params)
+            tables = self.__query_api.query(query, params=params)
 
             time_series = {'count': len(tables[0].records), 'records': []}
             for table in tables:
