@@ -188,7 +188,10 @@ class MySQL(MySQLBase):
                                                      query,
                                                      [token])[0]
 
-            return int(min_count), int(max_count), int(avg)
+            if int(min_count) is not None and int(max_count) is not None and int(avg) is not None:
+                return int(min_count), int(max_count), int(avg)
+            else:
+                return -1, -1, -1
         else:
             return -1, -1, -1
 
